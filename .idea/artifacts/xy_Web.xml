@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="xy:Web">
+    <output-path>$USER_HOME$/Desktop</output-path>
+    <root id="archive" name="xy_Web.war">
+      <element id="artifact" artifact-name="xy:Web exploded" />
+    </root>
+  </artifact>
+</component>
