@@ -45,17 +45,6 @@ public class User {
     private String self_introduction;
     //注册时间
     private String register_time;
-    //通讯标识
-    private String im;
-
-    public String getIm() {
-        return im;
-    }
-
-    public void setIm(String im) {
-        this.im = im;
-    }
-
 
     public String getRegister_time() {
         return register_time;
@@ -187,6 +176,7 @@ public class User {
                 ", student_id='" + student_id + '\'' +
                 ", sex='" + sex + '\'' +
                 ", self_introduction='" + self_introduction + '\'' +
+                ", register_time='" + register_time + '\'' +
                 '}';
     }
 }

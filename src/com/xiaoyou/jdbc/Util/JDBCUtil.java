@@ -1,7 +1,6 @@
 package com.xiaoyou.jdbc.Util;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
+import java.sql.*;
 
 public class JDBCUtil {
     //加载驱动程序
@@ -33,5 +32,30 @@ public class JDBCUtil {
             e.printStackTrace();
         }
         return  null;
+    }
+    public static void close(ResultSet rs, Statement pstmt,Connection connection ){
+        //5、释放资源
+        if (rs != null) {
+            try {
+                rs.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        if (pstmt != null) {
+            try {
+                pstmt.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        if (connection != null) {
+            try {
+                connection.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+
     }
 }

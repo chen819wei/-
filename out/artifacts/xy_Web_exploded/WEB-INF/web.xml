@@ -4,11 +4,11 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
     <servlet>
-        <servlet-name>MyServlet</servlet-name>
-        <servlet-class>com.xiaoyou.servlset.MyServlet</servlet-class>
+        <servlet-name>LogIn</servlet-name>
+        <servlet-class>com.xiaoyou.servlet.LogIn</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>MyServlet</servlet-name>
-        <url-pattern>/MyServlet</url-pattern>
+        <servlet-name>LogIn</servlet-name>
+        <url-pattern>/QQ</url-pattern>
     </servlet-mapping>
 </web-app>
