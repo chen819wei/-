@@ -6,13 +6,13 @@ import java.util.List;
 
 public interface IUserDao {
     //1、添加用户
-    void insert(User user);
+    int insert(User user);
 
     //2、修改修改用户信息
-    void update(User user);
+    int update(User user);
 
     //3、删除用户
-    void delete(String user_name);
+    int delete(String user_name);
 
     //4、查询用户
     User select(String user_name);

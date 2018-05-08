@@ -9,6 +9,38 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>LogIn</servlet-name>
-        <url-pattern>/QQ</url-pattern>
+        <url-pattern>/LogIn</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SendEmail</servlet-name>
+        <servlet-class>com.xiaoyou.servlet.SendEmail</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SendEmail</servlet-name>
+        <url-pattern>/SendEmail</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Registered</servlet-name>
+        <servlet-class>com.xiaoyou.servlet.Registered</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Registered</servlet-name>
+        <url-pattern>/Registered</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ProductRelease</servlet-name>
+        <servlet-class>com.xiaoyou.servlet.ProductRelease</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductRelease</servlet-name>
+        <url-pattern>/ProductRelease</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Picture</servlet-name>
+        <servlet-class>com.xiaoyou.servlet.Picture</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Picture</servlet-name>
+        <url-pattern>/Picture</url-pattern>
     </servlet-mapping>
 </web-app>

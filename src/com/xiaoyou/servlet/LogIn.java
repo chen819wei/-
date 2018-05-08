@@ -9,32 +9,34 @@ import java.io.PrintWriter;
 
 
 public class LogIn extends HttpServlet {
-
     protected void doPost(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws IOException {
-        response.setCharacterEncoding("UTF-8");
-        response.setHeader("content-type","text/html;charset=UTF-8");
-        PrintWriter out=response.getWriter();
-        String user_name=request.getParameter("username");
-        String user_password=request.getParameter("password");
+        response.setContentType("text/html;charset=UTF-8");
+        request.setCharacterEncoding("UTF-8");
+        PrintWriter out = response.getWriter();
+        System.out.println("dopost执行");
         UserDaoImpl dao = new UserDaoImpl();
-        User user=dao.select(user_name);
-        if(user!=null){
-            if (user_name.equals(user.getUser_name() )&& user_password.equals(user.getUser_password())) {
+        User user = dao.select(request.getParameter("user_name"));
+        System.out.println(user);
+        if (user != null) {
+            if (request.getParameter("user_name").equals(user.getUser_name()) && request.getParameter("user_password").equals(user.getUser_password())) {
                 System.out.println("登录成功");
-                out.println("登陆成功");
-
-            }else {
+                out.write("{\"onSuccess\":\"登录成功\"}");
+                out.close();
+            } else {
                 System.out.println("密码错误");
-                out.println("密码错误");
+                out.write("{\"onSuccess\":\"密码错误\"}");
+                out.close();
             }
-        }else {
+        } else {
             System.out.println("账户名不存在");
-            out.println("账户名不存在");
+            out.write("{\"onSuccess\":\"账户名不存在\"}");
+            out.close();
         }
+
 
     }
 
-    protected void doGet(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response)   {
-
+    protected void doGet(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws IOException {
+        doPost(request, response);
     }
 }

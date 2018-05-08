@@ -1,39 +1,42 @@
 package com.xiaoyou.jdbc.Util;
 
+import com.alibaba.druid.pool.DruidDataSourceFactory;
+import com.alibaba.druid.util.JdbcUtils;
+
+import javax.sql.DataSource;
+import java.io.FileInputStream;
 import java.sql.*;
+import java.util.Properties;
 
 public class JDBCUtil {
-    //加载驱动程序
-    public static final String DRIVER = "com.mysql.jdbc.Driver";
-    //数据库账号
-    public static final String USERNAME = "root";
-    //数据库密码
-    public static final String PASSWORD = "admin";
-    //数据库名
-    public static final String dbName = "xy";
-    // 定义访问数据库的地址
-    public static final String URL = "jdbc:mysql://localhost:3306/" + dbName;
+    public static DataSource ds = null;
 
     static {
-        //1、加载驱动程序
         try {
-            Class.forName(JDBCUtil.DRIVER);
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-    }
+            //1.加载配置文件
+            Properties p = new Properties();
+            FileInputStream in = null;
 
-    public static Connection getConnection(){
-        try {
-            //2、连接数据库
-            return DriverManager.getConnection(JDBCUtil.URL, JDBCUtil.USERNAME, JDBCUtil.PASSWORD);
-
+            in = new FileInputStream(JDBCUtil.class.getClassLoader().getResource("db.properties").getPath());
+            p.load(in);
+            ds = DruidDataSourceFactory.createDataSource(p);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return  null;
+
     }
-    public static void close(ResultSet rs, Statement pstmt,Connection connection ){
+
+    public static Connection getConnection() {
+        try {
+            // 2.连接数据
+            return ds.getConnection();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public static void close(ResultSet rs, Statement pstmt, Connection connection) {
         //5、释放资源
         if (rs != null) {
             try {

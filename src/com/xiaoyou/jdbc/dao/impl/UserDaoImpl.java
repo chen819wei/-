@@ -17,7 +17,7 @@ public class UserDaoImpl implements IUserDao {
     private ResultSet rs;
 
     @Override
-    public void insert(User user) {
+    public int insert(User user) {
         try {
             connection = JDBCUtil.getConnection();
 
@@ -42,11 +42,11 @@ public class UserDaoImpl implements IUserDao {
 
             //4、执行sql语句
             pstmt.executeUpdate();
-            // System.out.println(user);
+            return 0;
 
 
         } catch (Exception e) {
-
+            return 1;
         } finally {
             JDBCUtil.close(null, pstmt, connection);
         }
@@ -54,7 +54,7 @@ public class UserDaoImpl implements IUserDao {
     }
 
     @Override
-    public void update(User user) {
+    public int update(User user) {
         connection = JDBCUtil.getConnection();
         try {
 
@@ -74,8 +74,10 @@ public class UserDaoImpl implements IUserDao {
             pstmt.setString(8, user.getSex());
             pstmt.setString(9, user.getSelf_introduction());
             pstmt.executeUpdate();
+            return 0;
         } catch (SQLException e) {
             e.printStackTrace();
+            return 1;
         } finally {
             JDBCUtil.close(null, pstmt, connection);
         }
@@ -83,7 +85,7 @@ public class UserDaoImpl implements IUserDao {
     }
 
     @Override
-    public void delete(String user_name) {
+    public int delete(String user_name) {
         connection = JDBCUtil.getConnection();
         //3、创建语句
         try {
@@ -92,10 +94,11 @@ public class UserDaoImpl implements IUserDao {
             pstmt = connection.prepareStatement(deleteSQL);
             pstmt.setString(1, user_name);
             pstmt.executeUpdate();
-
+            return 0;
             //System.out.println("删除成功");
         } catch (SQLException e) {
             e.printStackTrace();
+            return 1;
         } finally {
             JDBCUtil.close(null, pstmt, connection);
         }
@@ -108,7 +111,7 @@ public class UserDaoImpl implements IUserDao {
 
             String selectSQL = "select * from user_info where user_name=?";
             pstmt = connection.prepareStatement(selectSQL);
-            pstmt.setString(1,user_name);
+            pstmt.setString(1, user_name);
             rs = pstmt.executeQuery();
             if (rs.next()) {
                 User user = new User();

@@ -1,10 +1,12 @@
 package com.xiaoyou.jdbc.domain;
 
 public class Product {
+    //商品标题
+    private String title;
     //商品ID
     private int product_id;
     //商品价格
-    private String pirce;
+    private Double pirce;
     //商品文字描述
     private String description;
     //商品图片
@@ -17,22 +19,46 @@ public class Product {
     private String address;
     //商品分类
     private String product_category;
-    //用户ID
-    private String user_id;
+    //用户账号
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
     public int getProduct_id() {
         return product_id;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "title='" + title + '\'' +
+                ", product_id=" + product_id +
+                ", pirce=" + pirce +
+                ", description='" + description + '\'' +
+                ", picture='" + picture + '\'' +
+                ", contact_name='" + contact_name + '\'' +
+                ", phone_number='" + phone_number + '\'' +
+                ", address='" + address + '\'' +
+                ", product_category='" + product_category + '\'' +
+                ", user_name='" + user_name + '\'' +
+                ", release_time='" + release_time + '\'' +
+                '}';
     }
 
     public void setProduct_id(int product_id) {
         this.product_id = product_id;
     }
 
-    public String getPirce() {
+    public Double getPirce() {
         return pirce;
     }
 
-    public void setPirce(String pirce) {
+    public void setPirce(Double pirce) {
         this.pirce = pirce;
     }
 
@@ -84,15 +110,28 @@ public class Product {
         this.product_category = product_category;
     }
 
-    public String getUser_id() {
-        return user_id;
+    public String getUser_name() {
+        return user_name;
     }
 
-    public void setUser_id(String user_id) {
-        this.user_id = user_id;
+    public void setUser_name(String user_name) {
+        this.user_name = user_name;
     }
 
-    public Product(String pirce, String description, String picture, String contact_name, String phone_number, String address, String product_category, String user_id) {
+    public String getRelease_time() {
+        return release_time;
+    }
+
+    public void setRelease_time(String release_time) {
+        this.release_time = release_time;
+    }
+
+    private String user_name;
+    //发布时间
+    private String release_time;
+
+    public Product(String title, Double pirce, String description, String picture, String contact_name, String phone_number, String address, String product_category, String user_name) {
+        this.title = title;
         this.pirce = pirce;
         this.description = description;
         this.picture = picture;
@@ -100,8 +139,10 @@ public class Product {
         this.phone_number = phone_number;
         this.address = address;
         this.product_category = product_category;
-        this.user_id = user_id;
+        this.user_name = user_name;
     }
 
+    public Product() {
 
+    }
 }
