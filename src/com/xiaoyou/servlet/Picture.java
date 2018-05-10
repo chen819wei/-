@@ -1,5 +1,7 @@
 package com.xiaoyou.servlet;
 
+import com.xiaoyou.jdbc.Util.RandomString;
+
 import javax.servlet.ServletException;
 import javax.servlet.ServletInputStream;
 import javax.servlet.annotation.WebServlet;
@@ -9,7 +11,11 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Random;
 
+/*
+* 图片上传接口
+* */
 @WebServlet(name = "Picture")
 public class Picture extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -19,14 +25,15 @@ public class Picture extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         request.setCharacterEncoding("UTF-8");
         PrintWriter out = response.getWriter();
-        //用精确到毫秒的时间来给图片命名
+        //用精确到毫秒的时间和一个六位的随机字符串来给图片命名
         SimpleDateFormat formatter = new SimpleDateFormat("yyyyMMddHHmmssSSS");
-        String formatStr = formatter.format(new Date());
+        String formatStr = formatter.format(new Date())+RandomString.randomString(6);
         //图片存储路径
-        String path = "c:/image/" + formatStr + ".jpg";
+        String path = "c:/image/" + formatStr + ".JPEG";
         //存储图片的完整路径
-        String imagePath="39.105.10.110/"+path;
+        String imagePath="47.93.10.113/"+path;
         //利用request对象返回客户端来的输入流
+
         try (ServletInputStream sis = request.getInputStream()) {
             //将图片存放到指定的路径
             OutputStream os = new FileOutputStream(path);
@@ -44,7 +51,7 @@ public class Picture extends HttpServlet {
             os.close();
             //回复给客户端图片地址
             out.write("{\"picture\":0}");
-            out.write("{\"message\":imagePath}");
+            out.write("{\"message\":"+imagePath+"}");
             out.println(imagePath);
             out.close();
         } catch (Exception e) {
@@ -55,4 +62,5 @@ public class Picture extends HttpServlet {
             out.close();
         }
     }
+
 }

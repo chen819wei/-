@@ -1,8 +1,6 @@
 package com.xiaoyou.jdbc.Util;
 
 import com.alibaba.druid.pool.DruidDataSourceFactory;
-import com.alibaba.druid.util.JdbcUtils;
-
 import javax.sql.DataSource;
 import java.io.FileInputStream;
 import java.sql.*;
@@ -10,20 +8,17 @@ import java.util.Properties;
 
 public class JDBCUtil {
     public static DataSource ds = null;
-
     static {
         try {
             //1.º”‘ÿ≈‰÷√Œƒº˛
             Properties p = new Properties();
             FileInputStream in = null;
-
             in = new FileInputStream(JDBCUtil.class.getClassLoader().getResource("db.properties").getPath());
             p.load(in);
             ds = DruidDataSourceFactory.createDataSource(p);
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 
     public static Connection getConnection() {

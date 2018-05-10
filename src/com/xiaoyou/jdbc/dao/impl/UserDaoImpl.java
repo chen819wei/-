@@ -46,6 +46,7 @@ public class UserDaoImpl implements IUserDao {
 
 
         } catch (Exception e) {
+            e.printStackTrace();
             return 1;
         } finally {
             JDBCUtil.close(null, pstmt, connection);

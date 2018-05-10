@@ -5,7 +5,7 @@
          version="4.0">
     <servlet>
         <servlet-name>LogIn</servlet-name>
-        <servlet-class>com.xiaoyou.servlet.user.LogIn</servlet-class>
+        <servlet-class>com.xiaoyou.servlet.LogIn</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>LogIn</servlet-name>

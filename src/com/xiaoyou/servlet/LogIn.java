@@ -7,7 +7,9 @@ import javax.servlet.http.HttpServlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-
+/*
+*µÇÂ½½Ó¿Ú
+* */
 public class LogIn extends HttpServlet {
     protected void doPost(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws IOException {
         response.setContentType("text/html;charset=UTF-8");

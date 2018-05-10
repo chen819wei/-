@@ -12,7 +12,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-
+/*
+* 商品发布接口
+* */
 @WebServlet(name = "ProductRelease")
 public class ProductRelease extends HttpServlet {
     Product product = new Product();
