@@ -1,7 +1,7 @@
 package com.xiaoyou.servlet;
 
-import com.xiaoyou.jdbc.dao.impl.UserDaoImpl;
-import com.xiaoyou.domain.User;
+import com.xiaoyou.jdbc.dao.dao.UserDao;
+import com.xiaoyou.domain.UserDomain;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -16,26 +16,26 @@ import java.io.PrintWriter;
  * */
 @WebServlet(name = "Registered")
 public class Registered extends HttpServlet {
-    User user = new User();
-    UserDaoImpl dao = new UserDaoImpl();
+    UserDomain userDomain = new UserDomain();
+    UserDao dao = new UserDao();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         request.setCharacterEncoding("UTF-8");
         PrintWriter out = response.getWriter();
-        user=dao.select(request.getParameter("user_name"));
-        if (user == null) {
-            user.setUser_name(request.getParameter("user_name"));
-            user.setUser_password(request.getParameter("user_password"));
-            user.setUser_nickname(request.getParameter("user_nickname"));
-            user.setUser_avatar(request.getParameter("user_avatar"));
-            user.setProvince(request.getParameter("province"));
-            user.setUniversity(request.getParameter("university"));
-            user.setProfession(request.getParameter("profession"));
-            user.setStudent_id(request.getParameter("student_id"));
-            user.setSex(request.getParameter("sex"));
-            user.setSelf_introduction(request.getParameter("self_introduction"));
-            int i = dao.insert(user);
+        userDomain =dao.select(request.getParameter("user_name"));
+        if (userDomain == null) {
+            userDomain.setUser_name(request.getParameter("user_name"));
+            userDomain.setUser_password(request.getParameter("user_password"));
+            userDomain.setUser_nickname(request.getParameter("user_nickname"));
+            userDomain.setUser_avatar(request.getParameter("user_avatar"));
+            userDomain.setProvince(request.getParameter("province"));
+            userDomain.setUniversity(request.getParameter("university"));
+            userDomain.setProfession(request.getParameter("profession"));
+            userDomain.setStudent_id(request.getParameter("student_id"));
+            userDomain.setSex(request.getParameter("sex"));
+            userDomain.setSelf_introduction(request.getParameter("self_introduction"));
+            int i = dao.insert(userDomain);
             if (i == 0) {
                 out.write("{\"register\":0,\"message\":\"×¢²á³É¹¦\"}");
                 out.close();

@@ -1,7 +1,7 @@
 package com.xiaoyou.servlet;
 
-import com.xiaoyou.jdbc.dao.impl.ProductDaoImpl;
-import com.xiaoyou.domain.Product;
+import com.xiaoyou.domain.ProductDomain;
+import com.xiaoyou.jdbc.dao.dao.ProductDao;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -15,8 +15,8 @@ import java.io.PrintWriter;
 * */
 @WebServlet(name = "ProductRelease")
 public class ProductRelease extends HttpServlet {
-    Product product = new Product();
-    ProductDaoImpl dao = new ProductDaoImpl();
+    ProductDomain product = new ProductDomain();
+    ProductDao dao = new ProductDao();
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         request.setCharacterEncoding("UTF-8");

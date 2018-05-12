@@ -40,6 +40,21 @@
         <servlet-class>com.xiaoyou.servlet.Picture</servlet-class>
     </servlet>
     <servlet-mapping>
+        <servlet-name>ProductCategory</servlet-name>
+        <url-pattern>/ProductCategory</url-pattern>
+    </servlet-mapping>   <servlet>
+        <servlet-name>ProductCategory</servlet-name>
+        <servlet-class>com.xiaoyou.servlet.ProductCategory</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RequirementCategory</servlet-name>
+        <url-pattern>/RequirementCategory</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>RequirementCategory</servlet-name>
+        <servlet-class>com.xiaoyou.servlet.RequirementCategory</servlet-class>
+    </servlet>
+    <servlet-mapping>
         <servlet-name>Picture</servlet-name>
         <url-pattern>/Picture</url-pattern>
     </servlet-mapping>

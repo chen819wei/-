@@ -1,7 +1,7 @@
 package com.xiaoyou.servlet;
 
-import com.xiaoyou.jdbc.dao.impl.UserDaoImpl;
-import com.xiaoyou.domain.User;
+import com.xiaoyou.jdbc.dao.dao.UserDao;
+import com.xiaoyou.domain.UserDomain;
 
 import javax.servlet.http.HttpServlet;
 import java.io.IOException;
@@ -16,11 +16,11 @@ public class LogIn extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         PrintWriter out = response.getWriter();
         System.out.println("dopost执行");
-        UserDaoImpl dao = new UserDaoImpl();
-        User user = dao.select(request.getParameter("user_name"));
-        System.out.println(user);
-        if (user != null) {
-            if (request.getParameter("user_name").equals(user.getUser_name()) && request.getParameter("user_password").equals(user.getUser_password())) {
+        UserDao dao = new UserDao();
+        UserDomain userDomain = dao.select(request.getParameter("user_name"));
+        System.out.println(userDomain);
+        if (userDomain != null) {
+            if (request.getParameter("user_name").equals(userDomain.getUser_name()) && request.getParameter("user_password").equals(userDomain.getUser_password())) {
                 System.out.println("登录成功");
                 out.write("{\"onSuccess\":\"登录成功\"}");
                 out.close();
