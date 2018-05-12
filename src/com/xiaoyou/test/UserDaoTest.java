@@ -1,7 +1,7 @@
-package com.xiaoyou.jdbc.dao.test;
+package com.xiaoyou.test;
 
 import com.xiaoyou.jdbc.dao.impl.UserDaoImpl;
-import com.xiaoyou.jdbc.domain.User;
+import com.xiaoyou.domain.User;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

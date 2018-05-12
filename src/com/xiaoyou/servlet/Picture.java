@@ -1,6 +1,6 @@
 package com.xiaoyou.servlet;
 
-import com.xiaoyou.jdbc.Util.RandomString;
+import com.xiaoyou.Util.RandomString;
 
 import javax.servlet.ServletException;
 import javax.servlet.ServletInputStream;
@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Random;
 
 /*
 * 图片上传接口

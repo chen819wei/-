@@ -1,6 +1,6 @@
 package com.xiaoyou.jdbc.dao.dao;
 
-import com.xiaoyou.jdbc.domain.User;
+import com.xiaoyou.domain.User;
 
 import java.util.List;
 

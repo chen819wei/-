@@ -1,13 +1,15 @@
 package com.xiaoyou.jdbc.dao.impl;
 
-import com.xiaoyou.jdbc.Util.JDBCUtil;
+import com.xiaoyou.Util.JDBCUtil;
+import com.xiaoyou.domain.User;
 import com.xiaoyou.jdbc.dao.dao.IProductDao;
-import com.xiaoyou.jdbc.domain.Product;
+import com.xiaoyou.domain.Product;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 
 public class ProductDaoImpl implements IProductDao {
     // 定义数据库的链接
@@ -62,7 +64,24 @@ public class ProductDaoImpl implements IProductDao {
 
     @Override
     public int productCollection(int productID) {
+        connection = JDBCUtil.getConnection();
 
         return 0;
     }
+
+    @Override
+    public Product productSelect(String user_name) {
+        return null;
+    }
+
+    @Override
+    public Product productSelect(int productID) {
+        return null;
+    }
+
+    @Override
+    public List<Product> productSelectAll() {
+        return null;
+    }
+
 }

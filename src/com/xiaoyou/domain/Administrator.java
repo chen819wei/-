@@ -1,4 +1,4 @@
-package com.xiaoyou.jdbc.domain;
+package com.xiaoyou.domain;
 
 public class Administrator {
     //π‹¿Ì‘±ID

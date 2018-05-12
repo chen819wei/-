@@ -1,7 +1,7 @@
 package com.xiaoyou.servlet;
 
 import com.xiaoyou.jdbc.dao.impl.UserDaoImpl;
-import com.xiaoyou.jdbc.domain.User;
+import com.xiaoyou.domain.User;
 
 import javax.servlet.http.HttpServlet;
 import java.io.IOException;

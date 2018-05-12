@@ -1,4 +1,4 @@
-package com.xiaoyou.jdbc.domain;
+package com.xiaoyou.domain;
 
 /*
 * dao	数据访问层（接口）	与数据打交道，可以是数据库操作，也可以是文件读写操作，甚至是redis缓存操作，

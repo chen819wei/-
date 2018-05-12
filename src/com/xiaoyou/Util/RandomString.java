@@ -1,4 +1,4 @@
-package com.xiaoyou.jdbc.Util;
+package com.xiaoyou.Util;
 
 import java.util.Random;
 

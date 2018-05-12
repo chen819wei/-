@@ -1,4 +1,4 @@
-package com.xiaoyou.jdbc.domain;
+package com.xiaoyou.domain;
 
 public class Product {
     //商品标题

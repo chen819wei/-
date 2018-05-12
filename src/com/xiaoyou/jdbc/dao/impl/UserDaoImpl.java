@@ -1,8 +1,8 @@
 package com.xiaoyou.jdbc.dao.impl;
 
-import com.xiaoyou.jdbc.Util.JDBCUtil;
+import com.xiaoyou.Util.JDBCUtil;
 import com.xiaoyou.jdbc.dao.dao.IUserDao;
-import com.xiaoyou.jdbc.domain.User;
+import com.xiaoyou.domain.User;
 
 import java.sql.*;
 import java.util.ArrayList;

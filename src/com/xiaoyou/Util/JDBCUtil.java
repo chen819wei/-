@@ -1,4 +1,4 @@
-package com.xiaoyou.jdbc.Util;
+package com.xiaoyou.Util;
 
 import com.alibaba.druid.pool.DruidDataSourceFactory;
 import javax.sql.DataSource;
