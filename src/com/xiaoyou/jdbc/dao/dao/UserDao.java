@@ -118,7 +118,7 @@ public class UserDao implements IUser {
                 UserDomain userDomain = new UserDomain();
                 userDomain.setUser_id(rs.getInt("user_id"));
                 userDomain.setUser_name(rs.getString("user_name"));
-                userDomain.setUser_password(rs.getString("user_password"));
+                //userDomain.setUser_password(rs.getString("user_password"));
                 userDomain.setUser_nickname(rs.getString("user_nickname"));
                 userDomain.setUser_avatar(rs.getString("user_avatar"));
                 userDomain.setProvince(rs.getString("province"));

@@ -37,6 +37,7 @@ public class ProductDao implements IProduct {
             pstmt.executeUpdate();
             return 0;
         } catch (SQLException e) {
+            e.printStackTrace();
             return 1;
         } finally {
             JDBCUtil.close(null, pstmt, connection);

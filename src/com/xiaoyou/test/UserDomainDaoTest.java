@@ -1,5 +1,6 @@
 package com.xiaoyou.test;
 
+import com.google.gson.GsonBuilder;
 import com.xiaoyou.domain.UserDomain;
 import com.xiaoyou.jdbc.dao.dao.UserDao;
 import org.junit.jupiter.api.Test;
@@ -16,8 +17,8 @@ public class UserDomainDaoTest {
     UserDao dao = new UserDao();
     @Test
     public void select(){
-        UserDomain userDomain =dao.select("name");
-        System.out.println(userDomain);
+        UserDomain userDomain =dao.select("user_name");
+        System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(userDomain));
     }
     @Test
     public void insert(){

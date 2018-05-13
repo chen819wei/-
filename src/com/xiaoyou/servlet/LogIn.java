@@ -18,7 +18,7 @@ public class LogIn extends HttpServlet {
         System.out.println("dopostÖ´ÐÐ");
         UserDao dao = new UserDao();
         UserDomain userDomain = dao.select(request.getParameter("user_name"));
-        System.out.println(userDomain);
+        //System.out.println(userDomain);
         if (userDomain != null) {
             if (request.getParameter("user_name").equals(userDomain.getUser_name()) && request.getParameter("user_password").equals(userDomain.getUser_password())) {
                 System.out.println("µÇÂ¼³É¹¦");

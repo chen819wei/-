@@ -32,10 +32,10 @@ public class ProductRelease extends HttpServlet {
         product.setUser_name(request.getParameter("user_name"));
         int i=dao.productRelease(product);
         if (i == 0) {
-            out.write("{\"release\":0,\"message\":\"商品发布成功\"}");
+            out.write("{\"release\":\"0\",\"message\":\"商品发布成功\"}");
             out.close();
         }else {
-            out.write("{\"release\":1,\"message\":\"商品发布失败\"}");
+            out.write("{\"release\":\"1\",\"message\":\"商品发布失败\"}");
             out.close();
         }
 

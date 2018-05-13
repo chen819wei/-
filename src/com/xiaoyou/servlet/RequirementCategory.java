@@ -1,6 +1,7 @@
 package com.xiaoyou.servlet;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.xiaoyou.domain.RequirementCategoryDomain;
 import com.xiaoyou.jdbc.dao.dao.RequirementCategoryDao;
 
@@ -21,11 +22,18 @@ public class RequirementCategory extends HttpServlet {
         PrintWriter out = response.getWriter();
         RequirementCategoryDao requirement_category_dao = new RequirementCategoryDao();
         List<RequirementCategoryDomain> list = requirement_category_dao.selectAllRequirementCategory();
+        //输出格式化的json字符串
+       /* Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        String category = gson.toJson(list);
+        String json="{\"list\":"+category+"}";
         out.write(new Gson().toJson(list));
-        //out.print(new Gson().toJson(list));
+         out.print(new Gson().toJson(list));      */
+        out.write("{\"list\":"+new GsonBuilder().setPrettyPrinting().create().toJson(list)+"}");
+        out.close();
+
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-doPost(request,response);
+        doPost(request, response);
     }
 }

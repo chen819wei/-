@@ -1,5 +1,9 @@
 package com.xiaoyou.servlet;
 
+import com.sun.jimi.core.Jimi;
+import com.sun.jimi.core.JimiException;
+import com.sun.jimi.core.JimiWriter;
+import com.sun.jimi.core.options.JPGOptions;
 import com.xiaoyou.Util.RandomString;
 
 import javax.servlet.ServletException;
@@ -8,6 +12,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.awt.image.ImageProducer;
 import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -28,9 +33,9 @@ public class Picture extends HttpServlet {
         SimpleDateFormat formatter = new SimpleDateFormat("yyyyMMddHHmmssSSS");
         String formatStr = formatter.format(new Date())+RandomString.randomString(6);
         //图片存储路径
-        String path = "c:/image/" + formatStr + ".JPEG";
+        String path = "C:/Users/Administrator/Desktop/apache-tomcat-9.0.7/apache-tomcat-9.0.7/webapps/image/" + formatStr+".JPEG";
         //存储图片的完整路径
-        String imagePath="47.93.10.113/"+path;
+        String imagePath="http://47.106.64.12:8080/image/"+ formatStr+".JPEG";
         //利用request对象返回客户端来的输入流
 
         try (ServletInputStream sis = request.getInputStream()) {
@@ -49,17 +54,13 @@ public class Picture extends HttpServlet {
             bos.close();
             os.close();
             //回复给客户端图片地址
-            out.write("{\"picture\":0}");
-            out.write("{\"message\":"+imagePath+"}");
-            out.println(imagePath);
-            out.close();
+            out.write("{\"picture\":\"0\",\"message\":"+"\""+imagePath+"\"}");
+
+           out.close();
         } catch (Exception e) {
             //回复给客户端图片存储错误信息
-            out.write("{\"picture\":1}");
-            out.write("{\"message\":\"图片存储失败\"}");
-            out.println(imagePath);
+            out.write("{\"picture\":\"1\",\"message\":\"图片存储失败\"}");
             out.close();
         }
     }
-
 }

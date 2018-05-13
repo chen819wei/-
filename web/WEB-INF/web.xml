@@ -58,4 +58,36 @@
         <servlet-name>Picture</servlet-name>
         <url-pattern>/Picture</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>EngineerRequest</servlet-name>
+        <servlet-class>com.xiaoyou.servlet.EngineerRequest</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EngineerRequest</servlet-name>
+        <url-pattern>/EngineerRequest</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>EgineerCertified</servlet-name>
+        <servlet-class>com.xiaoyou.servlet.EgineerCertified</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EgineerCertified</servlet-name>
+        <url-pattern>/EgineerCertified</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AlterUserInfo</servlet-name>
+        <servlet-class>com.xiaoyou.servlet.AlterUserInfo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AlterUserInfo</servlet-name>
+        <url-pattern>/AlterUserInfo</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UserInfoView</servlet-name>
+        <servlet-class>com.xiaoyou.servlet.UserInfoView</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserInfoView</servlet-name>
+        <url-pattern>/UserInfoView</url-pattern>
+    </servlet-mapping>
 </web-app>
