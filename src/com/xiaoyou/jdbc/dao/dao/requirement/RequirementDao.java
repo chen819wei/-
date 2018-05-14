@@ -1,6 +1,6 @@
-package com.xiaoyou.jdbc.dao.dao;
+package com.xiaoyou.jdbc.dao.dao.requirement;
 
-import com.xiaoyou.domain.RequirementDomain;
+import com.xiaoyou.domain.requirement.RequirementDomain;
 import com.xiaoyou.jdbc.dao.service.IRequirement;
 
 import java.util.List;

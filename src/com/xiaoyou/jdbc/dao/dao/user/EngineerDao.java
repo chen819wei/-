@@ -1,7 +1,7 @@
-package com.xiaoyou.jdbc.dao.dao;
+package com.xiaoyou.jdbc.dao.dao.user;
 
 import com.xiaoyou.Util.JDBCUtil;
-import com.xiaoyou.domain.EngineerDomain;
+import com.xiaoyou.domain.user.EngineerDomain;
 import com.xiaoyou.jdbc.dao.service.IEngineer;
 
 import java.sql.Connection;

@@ -1,7 +1,7 @@
-package com.xiaoyou.jdbc.dao.dao;
+package com.xiaoyou.jdbc.dao.dao.requirement;
 
 import com.xiaoyou.Util.JDBCUtil;
-import com.xiaoyou.domain.RequirementCategoryDomain;
+import com.xiaoyou.domain.requirement.RequirementCategoryDomain;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

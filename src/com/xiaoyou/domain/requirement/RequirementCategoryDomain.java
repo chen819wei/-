@@ -1,4 +1,4 @@
-package com.xiaoyou.domain;
+package com.xiaoyou.domain.requirement;
 
 public class RequirementCategoryDomain {
     private int requirement_category_id;

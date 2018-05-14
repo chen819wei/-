@@ -1,9 +1,8 @@
 package com.xiaoyou.servlet.product;
 
-import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.xiaoyou.domain.ProductCategoryDomain;
-import com.xiaoyou.jdbc.dao.dao.ProductCategoryDao;
+import com.xiaoyou.domain.product.ProductCategoryDomain;
+import com.xiaoyou.jdbc.dao.dao.product.ProductCategoryDao;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

@@ -1,4 +1,4 @@
-package com.xiaoyou.domain;
+package com.xiaoyou.domain.user;
 
 public class AdministratorDomain {
     //π‹¿Ì‘±ID

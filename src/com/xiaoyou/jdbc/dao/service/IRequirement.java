@@ -1,6 +1,6 @@
 package com.xiaoyou.jdbc.dao.service;
 
-import com.xiaoyou.domain.RequirementDomain;
+import com.xiaoyou.domain.requirement.RequirementDomain;
 
 import java.util.List;
 

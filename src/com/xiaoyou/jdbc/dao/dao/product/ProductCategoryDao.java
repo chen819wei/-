@@ -1,7 +1,7 @@
-package com.xiaoyou.jdbc.dao.dao;
+package com.xiaoyou.jdbc.dao.dao.product;
 
 import com.xiaoyou.Util.JDBCUtil;
-import com.xiaoyou.domain.ProductCategoryDomain;
+import com.xiaoyou.domain.product.ProductCategoryDomain;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

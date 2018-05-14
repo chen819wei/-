@@ -1,7 +1,7 @@
 package com.xiaoyou.servlet.user;
 
-import com.xiaoyou.domain.EngineerDomain;
-import com.xiaoyou.jdbc.dao.dao.EngineerDao;
+import com.xiaoyou.domain.user.EngineerDomain;
+import com.xiaoyou.jdbc.dao.dao.user.EngineerDao;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

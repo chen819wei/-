@@ -2,10 +2,10 @@ package com.xiaoyou.test;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.xiaoyou.domain.ProductCategoryDomain;
-import com.xiaoyou.domain.RequirementCategoryDomain;
-import com.xiaoyou.jdbc.dao.dao.ProductCategoryDao;
-import com.xiaoyou.jdbc.dao.dao.RequirementCategoryDao;
+import com.xiaoyou.domain.product.ProductCategoryDomain;
+import com.xiaoyou.domain.requirement.RequirementCategoryDomain;
+import com.xiaoyou.jdbc.dao.dao.product.ProductCategoryDao;
+import com.xiaoyou.jdbc.dao.dao.requirement.RequirementCategoryDao;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

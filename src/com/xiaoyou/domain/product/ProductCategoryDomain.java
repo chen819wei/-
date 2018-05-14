@@ -1,4 +1,4 @@
-package com.xiaoyou.domain;
+package com.xiaoyou.domain.product;
 
 public class ProductCategoryDomain {
     private int product_category_id;
