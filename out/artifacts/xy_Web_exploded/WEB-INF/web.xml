@@ -5,7 +5,7 @@
          version="4.0">
     <servlet>
         <servlet-name>LogIn</servlet-name>
-        <servlet-class>com.xiaoyou.servlet.LogIn</servlet-class>
+        <servlet-class>com.xiaoyou.servlet.user.LogIn</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>LogIn</servlet-name>
@@ -13,7 +13,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>SendEmail</servlet-name>
-        <servlet-class>com.xiaoyou.servlet.SendEmail</servlet-class>
+        <servlet-class>com.xiaoyou.servlet.util.SendEmail</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>SendEmail</servlet-name>
@@ -21,7 +21,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>Registered</servlet-name>
-        <servlet-class>com.xiaoyou.servlet.Registered</servlet-class>
+        <servlet-class>com.xiaoyou.servlet.user.Registered</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Registered</servlet-name>
@@ -29,7 +29,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>ProductRelease</servlet-name>
-        <servlet-class>com.xiaoyou.servlet.ProductRelease</servlet-class>
+        <servlet-class>com.xiaoyou.servlet.product.ProductRelease</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ProductRelease</servlet-name>
@@ -37,14 +37,14 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>Picture</servlet-name>
-        <servlet-class>com.xiaoyou.servlet.Picture</servlet-class>
+        <servlet-class>com.xiaoyou.servlet.util.Picture</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ProductCategory</servlet-name>
         <url-pattern>/ProductCategory</url-pattern>
     </servlet-mapping>   <servlet>
         <servlet-name>ProductCategory</servlet-name>
-        <servlet-class>com.xiaoyou.servlet.ProductCategory</servlet-class>
+        <servlet-class>com.xiaoyou.servlet.product.ProductCategory</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>RequirementCategory</servlet-name>
@@ -52,7 +52,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>RequirementCategory</servlet-name>
-        <servlet-class>com.xiaoyou.servlet.RequirementCategory</servlet-class>
+        <servlet-class>com.xiaoyou.servlet.requirement.RequirementCategory</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Picture</servlet-name>
@@ -60,7 +60,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>EngineerRequest</servlet-name>
-        <servlet-class>com.xiaoyou.servlet.EngineerRequest</servlet-class>
+        <servlet-class>com.xiaoyou.servlet.user.EngineerRequest</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>EngineerRequest</servlet-name>
@@ -68,7 +68,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>EgineerCertified</servlet-name>
-        <servlet-class>com.xiaoyou.servlet.EgineerCertified</servlet-class>
+        <servlet-class>com.xiaoyou.servlet.user.EgineerCertified</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>EgineerCertified</servlet-name>
@@ -76,7 +76,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>AlterUserInfo</servlet-name>
-        <servlet-class>com.xiaoyou.servlet.AlterUserInfo</servlet-class>
+        <servlet-class>com.xiaoyou.servlet.user.AlterUserInfo</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>AlterUserInfo</servlet-name>
@@ -84,7 +84,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>UserInfoView</servlet-name>
-        <servlet-class>com.xiaoyou.servlet.UserInfoView</servlet-class>
+        <servlet-class>com.xiaoyou.servlet.user.UserInfoView</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>UserInfoView</servlet-name>
