@@ -37,14 +37,14 @@ public class Registered extends HttpServlet {
             userDomain.setSelf_introduction(request.getParameter("self_introduction"));
             int i = dao.insert(userDomain);
             if (i == 0) {
-                out.write("{\"register\":\"0\",\"message\":\"注册成功\"}");
+                out.write("{\"register\":0,\"message\":\"注册成功\"}");
                 out.close();
             } else {
-                out.write("{\"register\":\"1\",\"message\":\"注册失败\"}");
+                out.write("{\"register\":1,\"message\":\"注册失败\"}");
                 out.close();
             }
         } else {
-            out.write("{\"register\":\"1\",\"message\":\"注册失败,用户名已存在\"}");
+            out.write("{\"register\":1,\"message\":\"注册失败,用户名已存在\"}");
             out.close();
         }
 

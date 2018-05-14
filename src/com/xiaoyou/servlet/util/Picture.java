@@ -36,8 +36,8 @@ public class Picture extends HttpServlet {
         String path = "C:/Users/Administrator/Desktop/apache-tomcat-9.0.7/apache-tomcat-9.0.7/webapps/image/" + formatStr+".JPEG";
         //存储图片的完整路径
         String imagePath="http://47.106.64.12:8080/image/"+ formatStr+".JPEG";
-        //利用request对象返回客户端来的输入流
 
+        //利用request对象返回客户端来的输入流
         try (ServletInputStream sis = request.getInputStream()) {
             //将图片存放到指定的路径
             OutputStream os = new FileOutputStream(path);
@@ -54,12 +54,12 @@ public class Picture extends HttpServlet {
             bos.close();
             os.close();
             //回复给客户端图片地址
-            out.write("{\"picture\":\"0\",\"message\":"+"\""+imagePath+"\"}");
+            out.write("{\"picture\":0,\"message\":"+"\""+imagePath+"\"}");
 
            out.close();
         } catch (Exception e) {
             //回复给客户端图片存储错误信息
-            out.write("{\"picture\":\"1\",\"message\":\"图片存储失败\"}");
+            out.write("{\"picture\":1,\"message\":\"图片存储失败\"}");
             out.close();
         }
     }

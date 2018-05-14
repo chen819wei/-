@@ -28,14 +28,14 @@ public class ProductRelease extends HttpServlet {
         product.setContact_name(request.getParameter("contact_name"));
         product.setPhone_number(request.getParameter("contact_phone_number"));
         product.setAddress(request.getParameter("contact_address"));
-        product.setProduct_category(request.getParameter("product_category"));
+        product.setProduct_category_id(Integer.parseInt(request.getParameter("product_category_id")));
         product.setUser_name(request.getParameter("user_name"));
         int i=dao.productRelease(product);
         if (i == 0) {
-            out.write("{\"release\":\"0\",\"message\":\"商品发布成功\"}");
+            out.write("{\"release\":0,\"message\":\"商品发布成功\"}");
             out.close();
         }else {
-            out.write("{\"release\":\"1\",\"message\":\"商品发布失败\"}");
+            out.write("{\"release\":1,\"message\":\"商品发布失败\"}");
             out.close();
         }
 

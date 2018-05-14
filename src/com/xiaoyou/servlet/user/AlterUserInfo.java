@@ -35,10 +35,10 @@ public class AlterUserInfo extends HttpServlet {
                 userDomain.setSelf_introduction(request.getParameter("self_introduction"));
                 int i = dao.update(userDomain);
                 if (i == 0) {
-                    out.write("{\"alter\":\"0\",\"message\":\"修改成功\"}");
+                    out.write("{\"alter\":0,\"message\":\"修改成功\"}");
                     out.close();
                 } else {
-                    out.write("{\"alter\":\"1\",\"message\":\"修改失败\"}");
+                    out.write("{\"alter\":1,\"message\":\"修改失败\"}");
                     out.close();
                 }
             /*} else {

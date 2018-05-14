@@ -4,7 +4,7 @@ public class ProductDomain {
     //商品标题
     private String title;
     //商品ID
-    private int product_id;
+    private int product_release_id;
     //商品价格
     private Double pirce;
     //商品文字描述
@@ -18,8 +18,25 @@ public class ProductDomain {
     //商品联系人地址
     private String address;
     //商品分类
-    private String product_category;
+    private int product_category_id;
     //用户账号
+    private String user_name;
+    //发布时间
+    private String release_time;
+
+    public ProductDomain(String title, int product_release_id, Double pirce, String description, String picture, String contact_name, String phone_number, String address, int product_category_id, String user_name, String release_time) {
+        this.title = title;
+        this.product_release_id = product_release_id;
+        this.pirce = pirce;
+        this.description = description;
+        this.picture = picture;
+        this.contact_name = contact_name;
+        this.phone_number = phone_number;
+        this.address = address;
+        this.product_category_id = product_category_id;
+        this.user_name = user_name;
+        this.release_time = release_time;
+    }
 
     public String getTitle() {
         return title;
@@ -29,29 +46,12 @@ public class ProductDomain {
         this.title = title;
     }
 
-    public int getProduct_id() {
-        return product_id;
+    public int getProduct_release_id() {
+        return product_release_id;
     }
 
-    @Override
-    public String toString() {
-        return "ProductDomain{" +
-                "title='" + title + '\'' +
-                ", product_id=" + product_id +
-                ", pirce=" + pirce +
-                ", description='" + description + '\'' +
-                ", picture='" + picture + '\'' +
-                ", contact_name='" + contact_name + '\'' +
-                ", phone_number='" + phone_number + '\'' +
-                ", address='" + address + '\'' +
-                ", product_category='" + product_category + '\'' +
-                ", user_name='" + user_name + '\'' +
-                ", release_time='" + release_time + '\'' +
-                '}';
-    }
-
-    public void setProduct_id(int product_id) {
-        this.product_id = product_id;
+    public void setProduct_release_id(int product_release_id) {
+        this.product_release_id = product_release_id;
     }
 
     public Double getPirce() {
@@ -102,12 +102,12 @@ public class ProductDomain {
         this.address = address;
     }
 
-    public String getProduct_category() {
-        return product_category;
+    public int getProduct_category_id() {
+        return product_category_id;
     }
 
-    public void setProduct_category(String product_category) {
-        this.product_category = product_category;
+    public void setProduct_category_id(int product_category_id) {
+        this.product_category_id = product_category_id;
     }
 
     public String getUser_name() {
@@ -126,23 +126,23 @@ public class ProductDomain {
         this.release_time = release_time;
     }
 
-    private String user_name;
-    //发布时间
-    private String release_time;
-
-    public ProductDomain(String title, Double pirce, String description, String picture, String contact_name, String phone_number, String address, String product_category, String user_name) {
-        this.title = title;
-        this.pirce = pirce;
-        this.description = description;
-        this.picture = picture;
-        this.contact_name = contact_name;
-        this.phone_number = phone_number;
-        this.address = address;
-        this.product_category = product_category;
-        this.user_name = user_name;
+    public ProductDomain() {
     }
 
-    public ProductDomain() {
-
+    @Override
+    public String toString() {
+        return "ProductDomain{" +
+                "title='" + title + '\'' +
+                ", product_release_id=" + product_release_id +
+                ", pirce=" + pirce +
+                ", description='" + description + '\'' +
+                ", picture='" + picture + '\'' +
+                ", contact_name='" + contact_name + '\'' +
+                ", phone_number='" + phone_number + '\'' +
+                ", address='" + address + '\'' +
+                ", product_category_id=" + product_category_id +
+                ", user_name='" + user_name + '\'' +
+                ", release_time='" + release_time + '\'' +
+                '}';
     }
 }

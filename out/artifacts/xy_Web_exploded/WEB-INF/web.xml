@@ -90,4 +90,28 @@
         <servlet-name>UserInfoView</servlet-name>
         <url-pattern>/UserInfoView</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>ProductShow</servlet-name>
+        <servlet-class>com.xiaoyou.servlet.product.ProductShow</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductShow</servlet-name>
+        <url-pattern>/ProductShow</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ProductDetails</servlet-name>
+        <servlet-class>com.xiaoyou.servlet.product.ProductDetails</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductDetails</servlet-name>
+        <url-pattern>/ProductDetails</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ProductDelete</servlet-name>
+        <servlet-class>com.xiaoyou.servlet.product.ProductDelete</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductDelete</servlet-name>
+        <url-pattern>/ProductDelete</url-pattern>
+    </servlet-mapping>
 </web-app>
