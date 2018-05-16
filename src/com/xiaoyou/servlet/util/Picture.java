@@ -1,9 +1,5 @@
 package com.xiaoyou.servlet.util;
 
-import com.sun.jimi.core.Jimi;
-import com.sun.jimi.core.JimiException;
-import com.sun.jimi.core.JimiWriter;
-import com.sun.jimi.core.options.JPGOptions;
 import com.xiaoyou.Util.RandomString;
 
 import javax.servlet.ServletException;
@@ -12,7 +8,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.awt.image.ImageProducer;
 import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -33,7 +28,7 @@ public class Picture extends HttpServlet {
         SimpleDateFormat formatter = new SimpleDateFormat("yyyyMMddHHmmssSSS");
         String formatStr = formatter.format(new Date())+RandomString.randomString(6);
         //Í¼Æ¬´æ´¢Â·¾¶
-        String path = "C:/Users/Administrator/Desktop/apache-tomcat-9.0.7/apache-tomcat-9.0.7/webapps/image/" + formatStr+".JPEG";
+        String path = "C:/Users/Administrator/Downloads/apache-tomcat-9.0.8-windows-x86/apache-tomcat-9.0.8/webapps/image/" + formatStr+".JPEG";
         //´æ´¢Í¼Æ¬µÄÍêÕûÂ·¾¶
         String imagePath="http://47.106.64.12:8080/image/"+ formatStr+".JPEG";
 

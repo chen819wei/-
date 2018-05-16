@@ -114,4 +114,20 @@
         <servlet-name>ProductDelete</servlet-name>
         <url-pattern>/ProductDelete</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>UserProductSelect</servlet-name>
+        <servlet-class>com.xiaoyou.servlet.product.UserProductSelect</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserProductSelect</servlet-name>
+        <url-pattern>/UserProductSelect</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ProductCollect</servlet-name>
+        <servlet-class>com.xiaoyou.servlet.product.ProductCollect</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductCollect</servlet-name>
+        <url-pattern>/ProductCollect</url-pattern>
+    </servlet-mapping>
 </web-app>

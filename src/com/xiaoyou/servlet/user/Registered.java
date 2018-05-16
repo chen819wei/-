@@ -23,8 +23,10 @@ public class Registered extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         request.setCharacterEncoding("UTF-8");
         PrintWriter out = response.getWriter();
-        userDomain =dao.select(request.getParameter("user_name"));
-        if (userDomain == null) {
+        UserDomain userDomain1;
+        userDomain1 =dao.select(request.getParameter("user_name"));
+
+        if (userDomain1 == null) {
             userDomain.setUser_name(request.getParameter("user_name"));
             userDomain.setUser_password(request.getParameter("user_password"));
             userDomain.setUser_nickname(request.getParameter("user_nickname"));
@@ -43,10 +45,11 @@ public class Registered extends HttpServlet {
                 out.write("{\"register\":1,\"message\":\"注册失败\"}");
                 out.close();
             }
-        } else {
-            out.write("{\"register\":1,\"message\":\"注册失败,用户名已存在\"}");
-            out.close();
         }
+        else {
+            out.write("{\"register\":1,\"message\":\"注册失败,用户名已存在\"}");
+           out.close();
+       }
 
     }
 

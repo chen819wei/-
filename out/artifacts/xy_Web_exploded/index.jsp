@@ -13,9 +13,13 @@
   <hr>
   <h2>test</h2>
   <hr>
-  <form action="LogIn" method="post">
-    用户名：<input type="text" name="username"/><br>
-    密码:<input type="password" name="password"/><br>
+  <form action="Registered" method="post">
+    用户名：<input type="text" name="user_name"/><br>
+    密码:<input type="text" name="user_password"/><br>
+    省份:<input type="text" name="province"/><br>
+    学校：<input type="text" name="university"/><br>
+    专业：<input type="text" name="profession"/><br>
+    学号：<input type="text" name="student_id"/><br>
     <input type="submit" />
   </form>
   </body>
