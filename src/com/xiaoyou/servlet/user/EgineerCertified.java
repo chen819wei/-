@@ -19,11 +19,9 @@ public class EgineerCertified extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         request.setCharacterEncoding("UTF-8");
         PrintWriter out = response.getWriter();
-        EngineerDao dao = new EngineerDao();
-        List<EngineerDomain> list = dao.engineerCertified(request.getParameter("user_name"));
+        List<EngineerDomain> list = new EngineerDao().engineerCertified(request.getParameter("user_name"));
         out.write("{\"list\":" + new GsonBuilder().setPrettyPrinting().create().toJson(list) + "}");
         out.close();
-
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

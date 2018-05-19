@@ -15,10 +15,7 @@ public class LogIn extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         request.setCharacterEncoding("UTF-8");
         PrintWriter out = response.getWriter();
-        System.out.println("dopostÖ´ÐÐ");
-        UserDao dao = new UserDao();
-        UserDomain userDomain = dao.select(request.getParameter("user_name"));
-        //System.out.println(userDomain);
+        UserDomain userDomain = new UserDao().select(request.getParameter("user_name"));
         if (userDomain != null) {
             if (request.getParameter("user_name").equals(userDomain.getUser_name()) && request.getParameter("user_password").equals(userDomain.getUser_password())) {
                 System.out.println("µÇÂ¼³É¹¦");

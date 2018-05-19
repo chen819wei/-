@@ -68,13 +68,10 @@ public class EngineerDomain {
                 '}';
     }
 
-    public EngineerDomain(int engineer_id, String user_name, String skill_name, String certificate, int status_mark, String register_time) {
-        this.engineer_id = engineer_id;
+    public EngineerDomain( String user_name, String skill_name, String certificate) {
         this.user_name = user_name;
         this.skill_name = skill_name;
         this.certificate = certificate;
-        this.status_mark = status_mark;
-        this.register_time = register_time;
     }
 
     public EngineerDomain() {

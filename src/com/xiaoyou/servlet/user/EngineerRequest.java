@@ -17,16 +17,13 @@ public class EngineerRequest extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         request.setCharacterEncoding("UTF-8");
         PrintWriter out = response.getWriter();
-        EngineerDomain engineer_domain = new EngineerDomain();
-        EngineerDao dao = new EngineerDao();
-        engineer_domain.setUser_name(request.getParameter("user_name"));
-        engineer_domain.setSkill_name(request.getParameter("certified_category"));
-        engineer_domain.setCertificate(request.getParameter("certified_image"));
-        int i=dao.engineerRequest(engineer_domain);
+        EngineerDomain engineer_domain = new EngineerDomain(request.getParameter("user_name"), request.getParameter(
+                "certified_category"), request.getParameter("certified_image"));
+        int i = new EngineerDao().engineerRequest(engineer_domain);
         if (i == 0) {
             out.write("{\"certified\":0,\"message\":\"存储成功\"}");
             out.close();
-        }else {
+        } else {
             out.write("{\"certified\":1,\"message\":\"提交信息失败\"}");
             out.close();
         }

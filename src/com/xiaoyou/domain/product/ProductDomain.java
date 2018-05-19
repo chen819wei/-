@@ -24,9 +24,8 @@ public class ProductDomain {
     //发布时间
     private String release_time;
 
-    public ProductDomain(String title, int product_release_id, Double pirce, String description, String picture, String contact_name, String phone_number, String address, int product_category_id, String user_name, String release_time) {
+    public ProductDomain(String title,Double pirce, String description, String picture, String contact_name, String phone_number, String address, int product_category_id, String user_name) {
         this.title = title;
-        this.product_release_id = product_release_id;
         this.pirce = pirce;
         this.description = description;
         this.picture = picture;
@@ -35,7 +34,6 @@ public class ProductDomain {
         this.address = address;
         this.product_category_id = product_category_id;
         this.user_name = user_name;
-        this.release_time = release_time;
     }
 
     public String getTitle() {

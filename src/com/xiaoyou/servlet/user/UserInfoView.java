@@ -18,8 +18,7 @@ public class UserInfoView extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         request.setCharacterEncoding("UTF-8");
         PrintWriter out = response.getWriter();
-        UserDao dao=new UserDao();
-        UserDomain userDomain =dao.select(request.getParameter("user_name"));
+        UserDomain userDomain =new UserDao().select(request.getParameter("user_name"));
         out.write(new GsonBuilder().setPrettyPrinting().create().toJson(userDomain));
     }
 

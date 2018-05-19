@@ -18,8 +18,7 @@ public class ProductDetails extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         request.setCharacterEncoding("UTF-8");
         PrintWriter out = response.getWriter();
-        ProductDao product_dao = new ProductDao();
-        ProductDomain product_domain = product_dao.productSelect(Integer.parseInt(request.getParameter("product_release_id")));
+        ProductDomain product_domain = new ProductDao().productSelect(Integer.parseInt(request.getParameter("product_release_id")));
        out.write(new GsonBuilder().setPrettyPrinting().create().toJson(product_domain));
     }
 

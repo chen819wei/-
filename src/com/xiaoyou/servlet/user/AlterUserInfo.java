@@ -17,38 +17,16 @@ public class AlterUserInfo extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         request.setCharacterEncoding("UTF-8");
         PrintWriter out = response.getWriter();
-        UserDao dao = new UserDao();
-        UserDomain userDomain = new UserDomain();
-        //UserDomain userDomain = dao.select(request.getParameter("user_name"));
-        //System.out.println(userDomain);
-     /*   if (userDomain != null) {
-            if (request.getParameter("user_password").equals(userDomain.getUser_password())) {*/
-                userDomain.setUser_name(request.getParameter("user_name"));
-                userDomain.setUser_password(request.getParameter("user_password"));
-                userDomain.setUser_nickname(request.getParameter("user_nickname"));
-                userDomain.setUser_avatar(request.getParameter("user_avatar"));
-                userDomain.setProvince(request.getParameter("province"));
-                userDomain.setUniversity(request.getParameter("university"));
-                userDomain.setProfession(request.getParameter("profession"));
-                userDomain.setStudent_id(request.getParameter("student_id"));
-                userDomain.setSex(request.getParameter("sex"));
-                userDomain.setSelf_introduction(request.getParameter("self_introduction"));
-                int i = dao.update(userDomain);
-                if (i == 0) {
-                    out.write("{\"alter\":0,\"message\":\"修改成功\"}");
-                    out.close();
-                } else {
-                    out.write("{\"alter\":1,\"message\":\"修改失败\"}");
-                    out.close();
-                }
-            /*} else {
-                out.write("{\"alter\":1,\"message\":\"密码错误\"}");
-                out.close();
-            }
-        } else {
-            out.write("{\"alter\":1,\"message\":\"账号不存在\"}");
+        UserDomain userDomain = new UserDomain(request.getParameter("user_name"), request.getParameter("user_password"), request.getParameter("user_nickname"), request.getParameter("user_avatar"), request.getParameter("province"),
+                request.getParameter("university"), request.getParameter("profession"), request.getParameter("student_id"), request.getParameter("sex"), request.getParameter("self_introduction"));
+        int i =  new UserDao().update(userDomain);
+        if (i == 0) {
+            out.write("{\"alter\":0,\"message\":\"修改成功\"}");
             out.close();
-        }*/
+        } else {
+            out.write("{\"alter\":1,\"message\":\"修改失败\"}");
+            out.close();
+        }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

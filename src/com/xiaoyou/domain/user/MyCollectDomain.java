@@ -38,8 +38,7 @@ public class MyCollectDomain {
         this.mark = mark;
     }
 
-    public MyCollectDomain(int my_collect_id, String user_name, int id, int mark) {
-        this.my_collect_id = my_collect_id;
+    public MyCollectDomain( String user_name, int id, int mark) {
         this.user_name = user_name;
         this.id = id;
         this.mark = mark;

@@ -22,14 +22,14 @@ public class ProductDelete extends HttpServlet {
         if (product_domain.getUser_name().equals(request.getParameter("user_name"))) {
             int i = product_dao.productDelete(Integer.parseInt(request.getParameter("product_release_id")));
             if (i == 0) {
-                out.write("{\"delete\":0,\"message\":\"商品发布成功\"}");
+                out.write("{\"delete\":0,\"message\":\"商品删除成功\"}");
                 out.close();
             } else {
-                out.write("{\"delete\":1,\"message\":\"商品发布成功\"}");
+                out.write("{\"delete\":1,\"message\":\"商品删除失败\"}");
                 out.close();
             }
         } else {
-            out.write("{\"delete\":1,\"message\":\"商品发布成功\"}");
+            out.write("{\"delete\":1,\"message\":\"商品不属于该用户\"}");
             out.close();
         }
 

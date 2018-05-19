@@ -42,7 +42,8 @@
     <servlet-mapping>
         <servlet-name>ProductCategory</servlet-name>
         <url-pattern>/ProductCategory</url-pattern>
-    </servlet-mapping>   <servlet>
+    </servlet-mapping>
+    <servlet>
         <servlet-name>ProductCategory</servlet-name>
         <servlet-class>com.xiaoyou.servlet.product.ProductCategory</servlet-class>
     </servlet>
@@ -123,11 +124,43 @@
         <url-pattern>/UserProductSelect</url-pattern>
     </servlet-mapping>
     <servlet>
-        <servlet-name>ProductCollect</servlet-name>
-        <servlet-class>com.xiaoyou.servlet.product.ProductCollect</servlet-class>
+        <servlet-name>Collect</servlet-name>
+        <servlet-class>com.xiaoyou.servlet.user.Collect</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>ProductCollect</servlet-name>
-        <url-pattern>/ProductCollect</url-pattern>
+        <servlet-name>Collect</servlet-name>
+        <url-pattern>/Collect</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>RequirementDelete</servlet-name>
+        <servlet-class>com.xiaoyou.servlet.requirement.RequirementDelete</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RequirementDelete</servlet-name>
+        <url-pattern>/RequirementDelete</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>RequirementDetail</servlet-name>
+        <servlet-class>com.xiaoyou.servlet.requirement.RequirementDetail</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RequirementDetail</servlet-name>
+        <url-pattern>/RequirementDetail</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>RequirementRelease</servlet-name>
+        <servlet-class>com.xiaoyou.servlet.requirement.RequirementRelease</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RequirementRelease</servlet-name>
+        <url-pattern>/RequirementRelease</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>RequirementShow</servlet-name>
+        <servlet-class>com.xiaoyou.servlet.requirement.RequirementShow</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RequirementShow</servlet-name>
+        <url-pattern>/RequirementShow</url-pattern>
     </servlet-mapping>
 </web-app>

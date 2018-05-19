@@ -19,8 +19,7 @@ public class UserProductSelect extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         request.setCharacterEncoding("UTF-8");
         PrintWriter out = response.getWriter();
-        ProductDao product_dao = new ProductDao();
-        List<ProductDomain> list = product_dao.userProductSelect(request.getParameter("user_name"));
+        List<ProductDomain> list = new ProductDao().userProductSelect(request.getParameter("user_name"));
         out.write("{\"list\":" + new GsonBuilder().setPrettyPrinting().create().toJson(list) + "}");
         out.close();
     }

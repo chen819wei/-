@@ -1,5 +1,6 @@
 package com.xiaoyou.jdbc.dao.service;
 
+import com.xiaoyou.domain.user.MyCollectDomain;
 import com.xiaoyou.domain.user.UserDomain;
 
 import java.util.List;
@@ -19,4 +20,7 @@ public interface IUser {
 
     //5、查询所有用户
     List<UserDomain> selectAll();
+
+    //商品或者需求收藏
+    int collection(MyCollectDomain my_collect);
 }

@@ -16,27 +16,16 @@ import java.io.PrintWriter;
  * */
 @WebServlet(name = "Registered")
 public class Registered extends HttpServlet {
-    UserDomain userDomain = new UserDomain();
-    UserDao dao = new UserDao();
-
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         request.setCharacterEncoding("UTF-8");
         PrintWriter out = response.getWriter();
         UserDomain userDomain1;
+        UserDao dao = new UserDao();
         userDomain1 =dao.select(request.getParameter("user_name"));
-
         if (userDomain1 == null) {
-            userDomain.setUser_name(request.getParameter("user_name"));
-            userDomain.setUser_password(request.getParameter("user_password"));
-            userDomain.setUser_nickname(request.getParameter("user_nickname"));
-            userDomain.setUser_avatar(request.getParameter("user_avatar"));
-            userDomain.setProvince(request.getParameter("province"));
-            userDomain.setUniversity(request.getParameter("university"));
-            userDomain.setProfession(request.getParameter("profession"));
-            userDomain.setStudent_id(request.getParameter("student_id"));
-            userDomain.setSex(request.getParameter("sex"));
-            userDomain.setSelf_introduction(request.getParameter("self_introduction"));
+            UserDomain userDomain = new UserDomain(request.getParameter("user_name"), request.getParameter("user_password"), request.getParameter("user_nickname"), request.getParameter("user_avatar"), request.getParameter("province"),
+                    request.getParameter("university"), request.getParameter("profession"), request.getParameter("student_id"), request.getParameter("sex"), request.getParameter("self_introduction"));
             int i = dao.insert(userDomain);
             if (i == 0) {
                 out.write("{\"register\":0,\"message\":\"×¢²á³É¹¦\"}");

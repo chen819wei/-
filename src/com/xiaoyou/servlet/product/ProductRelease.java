@@ -11,31 +11,25 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
+
 /*
-* 商品发布接口
-* */
+ * 商品发布接口
+ * */
 @WebServlet(name = "ProductRelease")
 public class ProductRelease extends HttpServlet {
-    ProductDomain product = new ProductDomain();
-    ProductDao dao = new ProductDao();
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         request.setCharacterEncoding("UTF-8");
         PrintWriter out = response.getWriter();
-        product.setPirce(Double.parseDouble(request.getParameter("product_price")));
-        product.setTitle(request.getParameter("product_title"));
-        product.setDescription(request.getParameter("product_description"));
-        product.setPicture(request.getParameter("product_image"));
-        product.setContact_name(request.getParameter("contact_name"));
-        product.setPhone_number(request.getParameter("contact_phone_number"));
-        product.setAddress(request.getParameter("contact_address"));
-        product.setProduct_category_id(Integer.parseInt(request.getParameter("product_category_id")));
-        product.setUser_name(request.getParameter("user_name"));
-        int i=dao.productRelease(product);
+        ProductDomain product = new ProductDomain(request.getParameter("title"), Double.parseDouble(request.getParameter("price")),
+                request.getParameter("description"), request.getParameter("picture"), request.getParameter("contact_name"),
+                request.getParameter("phone_number"), request.getParameter("address"), Integer.parseInt(request.getParameter("product_category_id")),
+                request.getParameter("user_name"));
+        int i = new ProductDao().productRelease(product);
         if (i == 0) {
             out.write("{\"release\":0,\"message\":\"商品发布成功\"}");
             out.close();
-        }else {
+        } else {
             out.write("{\"release\":1,\"message\":\"商品发布失败\"}");
             out.close();
         }

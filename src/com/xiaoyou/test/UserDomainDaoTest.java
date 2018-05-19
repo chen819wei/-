@@ -10,7 +10,7 @@ import java.util.List;
 
 public class UserDomainDaoTest {
     //创建一个用户
-    UserDomain userDomain = new UserDomain("name", "password", "nickname", "avatar", "贵州",
+    UserDomain userDomain = new UserDomain("wqwqwq", "password", "nickname", "avatar", "贵州",
             "university", "profession", "student_id", "男", "i am is");
     UserDomain userDomain1 = new UserDomain();
     //保存用户信息
@@ -18,7 +18,7 @@ public class UserDomainDaoTest {
 
     @Test
     public void select() {
-        UserDomain userDomain = dao.select("user_name");
+        UserDomain userDomain = dao.select("wqwqwq");
         System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(userDomain));
     }
 
@@ -27,8 +27,9 @@ public class UserDomainDaoTest {
         userDomain1 = dao.select("user");
         if (userDomain1 == null) {
             System.out.println(userDomain1);
-
             System.out.println(1);
+            dao.insert(userDomain);
+            System.out.println(userDomain);
         }else {
             System.out.println("cuowu");
         }

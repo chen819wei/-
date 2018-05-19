@@ -1,6 +1,8 @@
 package com.xiaoyou.Util;
 
 import com.alibaba.druid.pool.DruidDataSourceFactory;
+import org.apache.commons.dbutils.QueryRunner;
+
 import javax.sql.DataSource;
 import java.io.FileInputStream;
 import java.sql.*;
@@ -8,6 +10,7 @@ import java.util.Properties;
 
 public class JDBCUtil {
     public static DataSource ds = null;
+
     static {
         try {
             //1.加载配置文件
@@ -21,6 +24,9 @@ public class JDBCUtil {
         }
     }
 
+    public static  QueryRunner queryRunner(){
+        return new QueryRunner(ds);
+    }
     public static Connection getConnection() {
         try {
             // 2.连接数据
@@ -29,31 +35,5 @@ public class JDBCUtil {
             e.printStackTrace();
         }
         return null;
-    }
-
-    public static void close(ResultSet rs, Statement pstmt, Connection connection) {
-        //5、释放资源
-        if (rs != null) {
-            try {
-                rs.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
-        if (pstmt != null) {
-            try {
-                pstmt.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
-        if (connection != null) {
-            try {
-                connection.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
-
     }
 }
