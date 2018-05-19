@@ -15,7 +15,7 @@ import java.util.Date;
 /*
 * 图片上传接口
 * */
-@WebServlet(name = "Picture")
+@WebServlet(urlPatterns = {"/Picture"},name = "Picture")
 public class Picture extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doGet(request, response);

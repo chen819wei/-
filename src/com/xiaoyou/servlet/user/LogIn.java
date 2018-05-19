@@ -3,6 +3,7 @@ package com.xiaoyou.servlet.user;
 import com.xiaoyou.jdbc.dao.dao.user.UserDao;
 import com.xiaoyou.domain.user.UserDomain;
 
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -10,6 +11,7 @@ import java.io.PrintWriter;
 /*
 *µÇÂ½½Ó¿Ú
 * */
+@WebServlet(urlPatterns = {"/LogIn"},name = "LogIn")
 public class LogIn extends HttpServlet {
     protected void doPost(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws IOException {
         response.setContentType("text/html;charset=UTF-8");

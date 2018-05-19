@@ -2,113 +2,37 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="xy:Web" />
+      <artifact name="xy:Web exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b99c7823-8754-49db-8b3b-accb02397f0c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_dbutils_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementDelete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementRelease.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementShow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/UserRequirementSelect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/commons-dbutils-1.4.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/Util/JDBCUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/Util/JDBCUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/domain/product/ProductDomain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/domain/product/ProductDomain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/domain/requirement/RequirementDomain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/domain/requirement/RequirementDomain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/domain/user/EngineerDomain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/domain/user/EngineerDomain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/domain/user/MyCollectDomain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/domain/user/MyCollectDomain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/jdbc/dao/dao/product/ProductCategoryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/jdbc/dao/dao/product/ProductCategoryDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/jdbc/dao/dao/product/ProductDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/jdbc/dao/dao/product/ProductDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/jdbc/dao/dao/requirement/RequirementCategoryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/jdbc/dao/dao/requirement/RequirementCategoryDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/jdbc/dao/dao/requirement/RequirementDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/jdbc/dao/dao/requirement/RequirementDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/jdbc/dao/dao/user/EngineerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/jdbc/dao/dao/user/EngineerDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/jdbc/dao/dao/user/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/jdbc/dao/dao/user/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/jdbc/dao/service/IProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/jdbc/dao/service/IProduct.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/jdbc/dao/service/IRequirement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/jdbc/dao/service/IRequirement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/jdbc/dao/service/IUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/jdbc/dao/service/IUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/servlet/product/ProductCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/servlet/product/ProductCategory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/servlet/product/ProductCollect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/servlet/product/ProductDelete.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/servlet/product/ProductDelete.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/servlet/product/ProductDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/servlet/product/ProductDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/servlet/product/ProductRelease.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/servlet/product/ProductRelease.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/servlet/product/ProductShow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/servlet/product/ProductShow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/servlet/product/UserProductSelect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/servlet/product/UserProductSelect.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/servlet/requirement/RequirementCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/servlet/requirement/RequirementCategory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/servlet/user/AlterUserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/servlet/user/AlterUserInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/servlet/user/EgineerCertified.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/servlet/user/EgineerCertified.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/servlet/user/EngineerRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/servlet/user/EngineerRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/servlet/user/LogIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/servlet/user/LogIn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/servlet/user/Registered.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/servlet/user/Registered.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/servlet/user/UserInfoView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/servlet/user/UserInfoView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/servlet/util/Picture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/servlet/util/Picture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/test/UserDomainDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/classes/com/xiaoyou/test/UserDomainDaoTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/xy_Web_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/Util/JDBCUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/Util/JDBCUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/domain/product/ProductDomain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/domain/product/ProductDomain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/domain/requirement/RequirementDomain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/domain/requirement/RequirementDomain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/domain/user/EngineerDomain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/domain/user/EngineerDomain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/domain/user/MyCollectDomain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/domain/user/MyCollectDomain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/jdbc/dao/dao/product/ProductCategoryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/jdbc/dao/dao/product/ProductCategoryDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/jdbc/dao/dao/product/ProductDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/jdbc/dao/dao/product/ProductDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/jdbc/dao/dao/requirement/RequirementCategoryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/jdbc/dao/dao/requirement/RequirementCategoryDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/jdbc/dao/dao/requirement/RequirementDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/jdbc/dao/dao/requirement/RequirementDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/jdbc/dao/dao/user/EngineerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/jdbc/dao/dao/user/EngineerDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/jdbc/dao/dao/user/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/jdbc/dao/dao/user/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/jdbc/dao/service/IProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/jdbc/dao/service/IProduct.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/jdbc/dao/service/IRequirement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/jdbc/dao/service/IRequirement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/jdbc/dao/service/IUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/jdbc/dao/service/IUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/servlet/product/ProductCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/servlet/product/ProductCategory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/servlet/product/ProductCollect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/servlet/product/ProductDelete.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/servlet/product/ProductDelete.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/servlet/product/ProductDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/servlet/product/ProductDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/servlet/product/ProductRelease.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/servlet/product/ProductRelease.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/servlet/product/ProductShow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/servlet/product/ProductShow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/servlet/product/UserProductSelect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/servlet/product/UserProductSelect.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/servlet/requirement/RequirementCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/servlet/requirement/RequirementCategory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/servlet/user/AlterUserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/servlet/user/AlterUserInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/servlet/user/EgineerCertified.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/servlet/user/EgineerCertified.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/servlet/user/EngineerRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/servlet/user/EngineerRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/servlet/user/LogIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/servlet/user/LogIn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/servlet/user/Registered.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/servlet/user/Registered.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/servlet/user/UserInfoView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/servlet/user/UserInfoView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/servlet/util/Picture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/servlet/util/Picture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/test/ProductDomainCategoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/test/ProductDomainCategoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/test/UserDomainDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/xy/com/xiaoyou/test/UserDomainDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/Util/JDBCUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/Util/JDBCUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/domain/product/ProductDomain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/domain/product/ProductDomain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/domain/requirement/RequirementDomain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/domain/requirement/RequirementDomain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/domain/user/EngineerDomain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/domain/user/EngineerDomain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/domain/user/MyCollectDomain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/domain/user/MyCollectDomain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/jdbc/dao/dao/product/ProductCategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/jdbc/dao/dao/product/ProductCategoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/jdbc/dao/dao/product/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/jdbc/dao/dao/product/ProductDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/jdbc/dao/dao/requirement/RequirementCategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/jdbc/dao/dao/requirement/RequirementCategoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/jdbc/dao/dao/requirement/RequirementDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/jdbc/dao/dao/requirement/RequirementDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/jdbc/dao/dao/user/EngineerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/jdbc/dao/dao/user/EngineerDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/jdbc/dao/dao/user/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/jdbc/dao/dao/user/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/jdbc/dao/service/IProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/jdbc/dao/service/IProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/jdbc/dao/service/IRequirement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/jdbc/dao/service/IRequirement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/jdbc/dao/service/IUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/jdbc/dao/service/IUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductCollect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/servlet/user/Collect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductDelete.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductRelease.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductRelease.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductShow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductShow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/servlet/product/UserProductSelect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/servlet/product/UserProductSelect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementDelete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementRelease.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementRelease.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementShow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementShow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/UserRequirementSelect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/UserRequirementSelect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/servlet/user/AlterUserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/servlet/user/AlterUserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/servlet/user/Collect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/servlet/user/Collect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/servlet/user/EgineerCertified.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/servlet/user/EgineerCertified.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/servlet/user/EngineerRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/servlet/user/EngineerRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/servlet/user/LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/servlet/user/LogIn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/servlet/user/Registered.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/servlet/user/Registered.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/servlet/user/UserInfoView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/servlet/user/UserInfoView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/test/ProductDomainCategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/test/ProductDomainCategoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/test/UserDomainDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/test/UserDomainDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/servlet/util/Picture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/servlet/util/Picture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xiaoyou/servlet/util/SendEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xiaoyou/servlet/util/SendEmail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xy.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -134,47 +58,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="RequirementRelease.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementRelease.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="103">
+              <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="RequirementDetail.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementDetail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="20" column="65" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="65" />
+            <state relative-caret-position="108">
+              <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <file leaf-file-name="RequirementDelete.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementDelete.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="159" column="70" selection-start-line="159" selection-start-column="70" selection-end-line="159" selection-end-column="70" />
+            <state relative-caret-position="100">
+              <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductShow.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductShow.java">
+      <file leaf-file-name="RequirementCategory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementCategory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
-              <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="23" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RequirementShow.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementShow.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="21" column="57" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserRequirementSelect.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/UserRequirementSelect.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="22" column="100" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="22" selection-end-column="100" />
+              <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -182,80 +97,17 @@
       <file leaf-file-name="UserProductSelect.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/product/UserProductSelect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="23" selection-end-column="20" />
+            <state relative-caret-position="108">
+              <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductDomainCategoryTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/test/ProductDomainCategoryTest.java">
+      <file leaf-file-name="ProductShow.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductShow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="57" column="10" selection-start-line="57" selection-start-column="10" selection-end-line="57" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1761#1762#0" expanded="true" />
-                <element signature="e#1838#1839#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RequirementRelease.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementRelease.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="19" column="25" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RequirementDomain.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/domain/requirement/RequirementDomain.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3510">
-              <caret line="130" column="18" selection-start-line="130" selection-start-column="18" selection-end-line="130" selection-end-column="18" />
-              <folding>
-                <element signature="e#1203#1204#0" expanded="true" />
-                <element signature="e#1248#1249#0" expanded="true" />
-                <element signature="e#1440#1441#0" expanded="true" />
-                <element signature="e#1487#1488#0" expanded="true" />
-                <element signature="e#1671#1672#0" expanded="true" />
-                <element signature="e#1699#1700#0" expanded="true" />
-                <element signature="e#1741#1742#0" expanded="true" />
-                <element signature="e#1775#1776#0" expanded="true" />
-                <element signature="e#1807#1808#0" expanded="true" />
-                <element signature="e#1835#1836#0" expanded="true" />
-                <element signature="e#1877#1878#0" expanded="true" />
-                <element signature="e#1911#1912#0" expanded="true" />
-                <element signature="e#1949#1950#0" expanded="true" />
-                <element signature="e#1983#1984#0" expanded="true" />
-                <element signature="e#2037#2038#0" expanded="true" />
-                <element signature="e#2083#2084#0" expanded="true" />
-                <element signature="e#2117#2118#0" expanded="true" />
-                <element signature="e#2147#2148#0" expanded="true" />
-                <element signature="e#2193#2194#0" expanded="true" />
-                <element signature="e#2231#2232#0" expanded="true" />
-                <element signature="e#2270#2271#0" expanded="true" />
-                <element signature="e#2305#2306#0" expanded="true" />
-                <element signature="e#2361#2362#0" expanded="true" />
-                <element signature="e#2409#2410#0" expanded="true" />
-                <element signature="e#2448#2449#0" expanded="true" />
-                <element signature="e#2483#2484#0" expanded="true" />
-                <element signature="e#2539#2540#0" expanded="true" />
-                <element signature="e#2587#2588#0" expanded="true" />
-                <element signature="e#2621#2622#0" expanded="true" />
-                <element signature="e#2651#2652#0" expanded="true" />
-                <element signature="e#2697#2698#0" expanded="true" />
-                <element signature="e#2735#2736#0" expanded="true" />
-                <element signature="e#2782#2783#0" expanded="true" />
-                <element signature="e#2828#2829#0" expanded="true" />
-                <element signature="e#3009#3010#0" expanded="true" />
-                <element signature="e#3041#3042#0" expanded="true" />
-                <element signature="e#3091#3092#0" expanded="true" />
-                <element signature="e#3133#3134#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="27">
+              <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -263,8 +115,35 @@
       <file leaf-file-name="ProductRelease.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductRelease.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="34" column="9" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="34" selection-end-column="9" />
+            <state relative-caret-position="156">
+              <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductDetails.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductDetails.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductDelete.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductDelete.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductCategory.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductCategory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -301,7 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/ChangeUserInfo.java" />
         <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/ModifyUserInfo.java" />
         <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/LogIn.java" />
         <option value="$PROJECT_DIR$/src/com/xiaoyou/jdbc/dao/dao/UserDao.java" />
@@ -324,34 +202,35 @@
         <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductCollect.java" />
         <option value="$PROJECT_DIR$/src/com/xiaoyou/jdbc/dao/service/IRequirement.java" />
         <option value="$PROJECT_DIR$/src/com/xiaoyou/domain/product/ProductDomain.java" />
-        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductCategory.java" />
-        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductDelete.java" />
-        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductDetails.java" />
-        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductRelease.java" />
-        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductShow.java" />
-        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/product/UserProductSelect.java" />
-        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementCategory.java" />
         <option value="$PROJECT_DIR$/src/com/xiaoyou/test/UserDomainDaoTest.java" />
         <option value="$PROJECT_DIR$/src/com/xiaoyou/domain/user/UserDomain.java" />
-        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/user/AlterUserInfo.java" />
         <option value="$PROJECT_DIR$/src/com/xiaoyou/domain/user/MyCollectDomain.java" />
-        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/user/Collect.java" />
-        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/user/EgineerCertified.java" />
         <option value="$PROJECT_DIR$/src/com/xiaoyou/domain/user/EngineerDomain.java" />
-        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/user/EngineerRequest.java" />
-        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/user/LogIn.java" />
-        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/user/Registered.java" />
-        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/user/UserInfoView.java" />
-        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/util/Picture.java" />
-        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementDelete.java" />
-        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementDetail.java" />
         <option value="$PROJECT_DIR$/src/com/xiaoyou/jdbc/dao/dao/requirement/RequirementDao.java" />
-        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementRelease.java" />
         <option value="$PROJECT_DIR$/src/com/xiaoyou/domain/requirement/RequirementDomain.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementShow.java" />
-        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/UserRequirementSelect.java" />
         <option value="$PROJECT_DIR$/src/com/xiaoyou/test/ProductDomainCategoryTest.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/user/LogIn.java" />
+        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/util/SendEmail.java" />
+        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/util/Picture.java" />
+        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/user/UserInfoView.java" />
+        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/user/Registered.java" />
+        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/user/EngineerRequest.java" />
+        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/user/EgineerCertified.java" />
+        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/user/Collect.java" />
+        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/user/AlterUserInfo.java" />
+        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/UserRequirementSelect.java" />
+        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementShow.java" />
+        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementRelease.java" />
+        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementDetail.java" />
+        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementDelete.java" />
+        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementCategory.java" />
+        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/product/UserProductSelect.java" />
+        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductShow.java" />
+        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductRelease.java" />
+        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductDetails.java" />
+        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductDelete.java" />
+        <option value="$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductCategory.java" />
       </list>
     </option>
   </component>
@@ -575,7 +454,50 @@
             </path>
             <path>
               <item name="xy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="xy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="JUnit5.0" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="xy" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+            <path>
+              <item name="xy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
+            <path>
+              <item name="xy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="com.intellij.database" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
+            </path>
+            <path>
+              <item name="xy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="com.intellij.database" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
+              <item name="data" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
+            </path>
+            <path>
+              <item name="xy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="com.intellij.database" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
+              <item name="data" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
+              <item name="extractors" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
+            </path>
+            <path>
+              <item name="xy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="com.intellij.database" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
+              <item name="schema" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
             </path>
           </expand>
           <select />
@@ -598,14 +520,14 @@
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\IdeaProjects\xy\resources" />
-      <recent name="E:\IdeaProjects\xy\web\WEB-INF" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\IdeaProjects\xy\web\WEB-INF\lib" />
       <recent name="E:\IdeaProjects\xy\lib" />
       <recent name="E:\IdeaProjects\xy\web\WEB-INF\libs" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IdeaProjects\xy\resources" />
+      <recent name="E:\IdeaProjects\xy\web\WEB-INF" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -620,7 +542,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProductDomainCategoryTest.userRequirementSelect">
+  <component name="RunManager" selected="Tomcat Server.Unnamed">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -985,17 +907,11 @@
       <workItem from="1526090036591" duration="4392000" />
       <workItem from="1526099818641" duration="1096000" />
       <workItem from="1526100957305" duration="52930000" />
-      <workItem from="1526689759542" duration="5660000" />
+      <workItem from="1526689759542" duration="11548000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProductDomainCategoryTest_requirementCategoryDao - 2018.05.19 at 10h 36m 05s.xml">
-      <configuration name="ProductDomainCategoryTest.requirementCategoryDao" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProductDomainCategoryTest_requirementDetail - 2018.05.19 at 11h 33m 27s.xml">
-      <configuration name="ProductDomainCategoryTest.requirementDetail" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ProductDomainCategoryTest_requirementDetail - 2018.05.19 at 11h 37m 29s.xml">
       <configuration name="ProductDomainCategoryTest.requirementDetail" configurationId="JUnit" />
     </history-entry>
@@ -1020,9 +936,15 @@
     <history-entry file="ProductDomainCategoryTest_requirementSelectAll - 2018.05.19 at 12h 04m 08s.xml">
       <configuration name="ProductDomainCategoryTest.requirementSelectAll" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ProductDomainCategoryTest_userRequirementSel - 2018.05.19 at 12h 12m 45s.xml">
+      <configuration name="ProductDomainCategoryTest.userRequirementSel" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductDomainCategoryTest_userRequirementSelect - 2018.05.19 at 12h 13m 28s.xml">
+      <configuration name="ProductDomainCategoryTest.userRequirementSelect" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="255806000" />
+    <option name="totallyTimeSpent" value="261694000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1047,7 +969,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="8" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.78216124" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36535162" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info active="true" content_ui="combo" x="557" y="45" width="252" height="637" id="Project" order="0" sideWeight="0.49228132" visible="true" weight="0.22239032" />
       <window_info id="Web" order="6" sideWeight="0.5077187" side_tool="true" weight="0.22239032" />
@@ -1110,13 +1032,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/util/SendEmail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1251,24 +1166,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/domain/user/UserDomain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
           <caret line="158" column="5" selection-start-line="158" selection-start-column="5" selection-end-line="158" selection-end-column="5" />
+          <folding>
+            <element signature="e#1395#1396#0" expanded="true" />
+            <element signature="e#1437#1438#0" expanded="true" />
+            <element signature="e#1477#1478#0" expanded="true" />
+            <element signature="e#1513#1514#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1283,13 +1190,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/user/Collect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
@@ -1313,58 +1213,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/user/LogIn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/user/Registered.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/user/UserInfoView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/util/Picture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/user/AlterUserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="20" column="196" selection-start-line="19" selection-start-column="8" selection-end-line="20" selection-end-column="196" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/user/EgineerCertified.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/user/EngineerRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/domain/user/EngineerDomain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -1376,27 +1224,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductDelete.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="33" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementDelete.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1417,20 +1244,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductRelease.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="34" column="9" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="34" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="65" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="65" />
         </state>
       </provider>
     </entry>
@@ -1483,55 +1296,168 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="159" column="70" selection-start-line="159" selection-start-column="70" selection-end-line="159" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductShow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="23" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementRelease.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/product/UserProductSelect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="23" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementShow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="21" column="57" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/UserRequirementSelect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="22" column="100" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="22" selection-end-column="100" />
+        <state relative-caret-position="162">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/test/ProductDomainCategoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="57" column="10" selection-start-line="57" selection-start-column="10" selection-end-line="57" selection-end-column="10" />
+        <state relative-caret-position="1431">
+          <caret line="55" column="37" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1761#1762#0" expanded="true" />
-            <element signature="e#1838#1839#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/util/SendEmail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/util/Picture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/user/UserInfoView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/user/Registered.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/user/LogIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/user/EngineerRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/user/EgineerCertified.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/user/Collect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/user/AlterUserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/UserRequirementSelect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementShow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementRelease.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementDelete.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/requirement/RequirementCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/product/UserProductSelect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductShow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductRelease.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductDelete.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xiaoyou/servlet/product/ProductCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
         </state>
       </provider>
     </entry>

@@ -15,7 +15,7 @@ import java.io.PrintWriter;
 /*
  * 商品发布接口
  * */
-@WebServlet(name = "ProductRelease")
+@WebServlet(urlPatterns = {"/ProductRelease"},name = "ProductRelease")
 public class ProductRelease extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");

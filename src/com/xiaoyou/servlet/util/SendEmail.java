@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Properties;
 
-@WebServlet(name = "SendEmail")
+@WebServlet(urlPatterns = {"/SendEmail"},name = "SendEmail")
 public class SendEmail extends HttpServlet {
     public void doGet(HttpServletRequest request,
                       HttpServletResponse response)

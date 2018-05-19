@@ -14,7 +14,7 @@ import java.io.PrintWriter;
 /*
  * ×¢²á½Ó¿Ú
  * */
-@WebServlet(name = "Registered")
+@WebServlet(urlPatterns = {"/Registered"},name = "Registered")
 public class Registered extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
