@@ -3,7 +3,7 @@ package com.xiaoyou.domain.user;
 public class EngineerDomain {
     private int engineer_id;
     private String user_name;
-    private String skill_name;
+    private int skill_id;
     private String certificate;
     private int status_mark;
     private String register_time;
@@ -24,12 +24,12 @@ public class EngineerDomain {
         this.user_name = user_name;
     }
 
-    public String getSkill_name() {
-        return skill_name;
+    public int getskill_id() {
+        return skill_id;
     }
 
-    public void setSkill_name(String skill_name) {
-        this.skill_name = skill_name;
+    public void setSkill_id(int skill_id) {
+        this.skill_id = skill_id;
     }
 
     public String getCertificate() {
@@ -61,16 +61,16 @@ public class EngineerDomain {
         return "EngineerDomain{" +
                 "engineer_id=" + engineer_id +
                 ", user_id=" + user_name +
-                ", skill_name='" + skill_name + '\'' +
+                ", skill_id='" + skill_id + '\'' +
                 ", certificate='" + certificate + '\'' +
                 ", status_mark=" + status_mark +
                 ", register_time='" + register_time + '\'' +
                 '}';
     }
 
-    public EngineerDomain( String user_name, String skill_name, String certificate) {
+    public EngineerDomain( String user_name, int skill_id, String certificate) {
         this.user_name = user_name;
-        this.skill_name = skill_name;
+        this.skill_id = skill_id;
         this.certificate = certificate;
     }
 

@@ -12,8 +12,8 @@ public class EngineerDao implements IEngineer {
     @Override
     public int engineerRequest(EngineerDomain engineer_domain) {
         try {
-            String insertSQL = "INSERT INTO engineer(user_name,skill_name,certificate) values(?,?,?)";
-            JDBCUtil.queryRunner().update(insertSQL, engineer_domain.getUser_name(), engineer_domain.getSkill_name(),engineer_domain.getCertificate());
+            String insertSQL = "INSERT INTO engineer(user_name,skill_id,certificate) values(?,?,?)";
+            JDBCUtil.queryRunner().update(insertSQL, engineer_domain.getUser_name(), engineer_domain.getskill_id(),engineer_domain.getCertificate());
             return 0;
         } catch (SQLException e) {
             e.printStackTrace();
@@ -26,7 +26,7 @@ public class EngineerDao implements IEngineer {
     public List<EngineerDomain> engineerCertified(String user_name) {
         try {
             String selectAllSQL = "select * from engineer where user_name=?";
-            return JDBCUtil.queryRunner().query(selectAllSQL, new BeanListHandler<EngineerDomain>(EngineerDomain.class));
+            return JDBCUtil.queryRunner().query(selectAllSQL, new BeanListHandler<EngineerDomain>(EngineerDomain.class),user_name);
         } catch (SQLException e) {
             e.printStackTrace();
         }

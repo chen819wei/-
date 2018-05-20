@@ -1,11 +1,15 @@
 package com.xiaoyou.test;
 
 import com.google.gson.GsonBuilder;
+import com.xiaoyou.domain.user.EngineerDomain;
 import com.xiaoyou.domain.user.UserDomain;
+import com.xiaoyou.jdbc.dao.dao.user.EngineerDao;
 import com.xiaoyou.jdbc.dao.dao.user.UserDao;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
+
+import static sun.misc.MessageUtils.out;
 
 
 public class UserDomainDaoTest {
@@ -22,6 +26,11 @@ public class UserDomainDaoTest {
         System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(userDomain));
     }
 
+    @Test
+    public void  aVoid(){
+    List<EngineerDomain> list = new EngineerDao().engineerCertified("111");
+        out("{\"list\":" + new GsonBuilder().setPrettyPrinting().create().toJson(list) + "}");
+    }
     @Test
     public void insert() {
         userDomain1 = dao.select("user");

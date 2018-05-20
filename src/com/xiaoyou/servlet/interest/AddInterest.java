@@ -1,7 +1,6 @@
-package com.xiaoyou.servlet.user;
+package com.xiaoyou.servlet.interest;
 
-import com.xiaoyou.domain.user.EngineerDomain;
-import com.xiaoyou.jdbc.dao.dao.user.EngineerDao;
+import com.xiaoyou.jdbc.dao.dao.interest.InterestDao;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,27 +10,23 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(urlPatterns = {"/EngineerRequest"},name = "EngineerRequest")
-public class EngineerRequest extends HttpServlet {
+@WebServlet(name = "AddInterest",urlPatterns = {"/AddInterest"})
+public class AddInterest extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         request.setCharacterEncoding("UTF-8");
         PrintWriter out = response.getWriter();
-        EngineerDomain engineer_domain = new EngineerDomain(request.getParameter("user_name"),Integer.parseInt(request.getParameter(
-                "skill_id")) , request.getParameter("certified_image"));
-        int i = new EngineerDao().engineerRequest(engineer_domain);
+        int i = new InterestDao().addInterest(Integer.parseInt(request.getParameter("user_id")), Integer.parseInt(request.getParameter("interest_label_id")));
         if (i == 0) {
-            out.write("{\"certified\":0,\"message\":\"存储成功\"}");
+            out.write("{\"addInterest\":0,\"message\":\"添加标签成功\"}");
             out.close();
         } else {
-            out.write("{\"certified\":1,\"message\":\"提交信息失败\"}");
+            out.write("{\"addInterest\":1,\"message\":\"添加标签失败\"}");
             out.close();
         }
-
-
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doGet(request, response);
+        doPost(request, response);
     }
 }
