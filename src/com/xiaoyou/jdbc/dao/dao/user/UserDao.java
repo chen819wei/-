@@ -90,4 +90,18 @@ public class UserDao implements IUser {
             return 1;
         }
     }
+
+    @Override
+    public List<MyCollectDomain> userCollectionShow(String user_name) {
+        try {
+            String selectSQL = "select * from my_collect where user_name=?";
+            return JDBCUtil.queryRunner().query(selectSQL, new BeanListHandler<MyCollectDomain>(MyCollectDomain.class), user_name);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+
+    }
+
+
 }

@@ -23,4 +23,7 @@ public interface IUser {
 
     //商品或者需求收藏
     int collection(MyCollectDomain my_collect);
+
+    //查看自己的收藏
+    List<MyCollectDomain> userCollectionShow(String user_name);
 }

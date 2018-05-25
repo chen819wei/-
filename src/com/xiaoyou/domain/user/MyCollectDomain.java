@@ -47,6 +47,13 @@ public class MyCollectDomain {
     public MyCollectDomain() {
     }
 
+    public MyCollectDomain(int my_collect_id, String user_name, int id, int mark) {
+        this.my_collect_id = my_collect_id;
+        this.user_name = user_name;
+        this.id = id;
+        this.mark = mark;
+    }
+
     @Override
     public String toString() {
         return "MyCollectDomain{" +

@@ -21,7 +21,7 @@ public class EngineerRequest extends HttpServlet {
                 "skill_id")) , request.getParameter("certified_image"));
         int i = new EngineerDao().engineerRequest(engineer_domain);
         if (i == 0) {
-            out.write("{\"certified\":0,\"message\":\"存储成功\"}");
+            out.write("{\"certified\":0,\"message\":\"提交信息成功\"}");
             out.close();
         } else {
             out.write("{\"certified\":1,\"message\":\"提交信息失败\"}");

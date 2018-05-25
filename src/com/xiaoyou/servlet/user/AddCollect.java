@@ -12,8 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(urlPatterns = {"/Collect"},name = "Collect")
-public class Collect extends HttpServlet {
+@WebServlet(urlPatterns = {"/AddCollect"},name = "AddCollect")
+public class AddCollect extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         request.setCharacterEncoding("UTF-8");
@@ -22,10 +22,10 @@ public class Collect extends HttpServlet {
                 Integer.parseInt(request.getParameter("mark")));
         int i = new UserDao().collection(my_collect);
         if (i == 0) {
-            out.write("{\"collect\":0,\"message\":\"商品收藏成功\"}");
+            out.write("{\"addCollect\":0,\"message\":\"收藏成功\"}");
             out.close();
         } else {
-            out.write("{\"collect\":1,\"message\":\"商品收藏失败\"}");
+            out.write("{\"addCollect\":1,\"message\":\"收藏失败\"}");
             out.close();
         }
     }

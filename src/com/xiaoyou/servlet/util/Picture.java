@@ -1,7 +1,5 @@
 package com.xiaoyou.servlet.util;
 
-import com.xiaoyou.Util.RandomString;
-
 import javax.servlet.ServletException;
 import javax.servlet.ServletInputStream;
 import javax.servlet.annotation.WebServlet;
@@ -9,8 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.UUID;
 
 /*
 * 图片上传接口
@@ -24,9 +21,8 @@ public class Picture extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         request.setCharacterEncoding("UTF-8");
         PrintWriter out = response.getWriter();
-        //用精确到毫秒的时间和一个六位的随机字符串来给图片命名
-        SimpleDateFormat formatter = new SimpleDateFormat("yyyyMMddHHmmssSSS");
-        String formatStr = formatter.format(new Date())+RandomString.randomString(6);
+        //采用UUID来作为图片的唯一标识
+        UUID formatStr = UUID.randomUUID();
         //图片存储路径
         String path = "C:/Users/Administrator/Downloads/apache-tomcat-9.0.8-windows-x86/apache-tomcat-9.0.8/webapps/image/" + formatStr+".JPEG";
         //存储图片的完整路径

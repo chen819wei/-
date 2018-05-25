@@ -27,7 +27,7 @@ public class UserDomainDaoTest {
     }
 
     @Test
-    public void  aVoid(){
+    public void  EgineerCertifiedTest(){
     List<EngineerDomain> list = new EngineerDao().engineerCertified("111");
         out("{\"list\":" + new GsonBuilder().setPrettyPrinting().create().toJson(list) + "}");
     }
@@ -91,6 +91,12 @@ public class UserDomainDaoTest {
 //       userDomain.setSelf_introduction("hello world");
 //       System.out.println(userDomain);
 //       service.update(userDomain);
+
+    }
+
+    @Test
+    public void userCollectionShowTest(){
+        out("{\"list\":" +new GsonBuilder().setPrettyPrinting().create().toJson(new UserDao().userCollectionShow("111"))+ "}");
 
     }
 
