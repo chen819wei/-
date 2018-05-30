@@ -2,7 +2,7 @@ package com.xiaoyou.servlet.product;
 
 import com.google.gson.GsonBuilder;
 import com.xiaoyou.domain.product.ProductDomain;
-import com.xiaoyou.jdbc.dao.dao.product.ProductDao;
+import com.xiaoyou.dao.product.ProductDao;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

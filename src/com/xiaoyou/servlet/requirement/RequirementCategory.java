@@ -2,7 +2,7 @@ package com.xiaoyou.servlet.requirement;
 
 import com.google.gson.GsonBuilder;
 import com.xiaoyou.domain.requirement.RequirementCategoryDomain;
-import com.xiaoyou.jdbc.dao.dao.requirement.RequirementCategoryDao;
+import com.xiaoyou.dao.requirement.RequirementCategoryDao;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

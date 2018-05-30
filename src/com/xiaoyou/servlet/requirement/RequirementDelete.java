@@ -1,7 +1,7 @@
 package com.xiaoyou.servlet.requirement;
 
 import com.xiaoyou.domain.requirement.RequirementDomain;
-import com.xiaoyou.jdbc.dao.dao.requirement.RequirementDao;
+import com.xiaoyou.dao.requirement.RequirementDao;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

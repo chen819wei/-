@@ -1,6 +1,6 @@
 package com.xiaoyou.servlet.user;
 
-import com.xiaoyou.jdbc.dao.dao.user.UserDao;
+import com.xiaoyou.dao.user.UserDao;
 import com.xiaoyou.domain.user.UserDomain;
 
 import javax.servlet.annotation.WebServlet;

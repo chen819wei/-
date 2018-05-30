@@ -6,10 +6,10 @@ import com.xiaoyou.domain.product.ProductCategoryDomain;
 import com.xiaoyou.domain.product.ProductDomain;
 import com.xiaoyou.domain.requirement.RequirementCategoryDomain;
 import com.xiaoyou.domain.requirement.RequirementDomain;
-import com.xiaoyou.jdbc.dao.dao.product.ProductCategoryDao;
-import com.xiaoyou.jdbc.dao.dao.product.ProductDao;
-import com.xiaoyou.jdbc.dao.dao.requirement.RequirementCategoryDao;
-import com.xiaoyou.jdbc.dao.dao.requirement.RequirementDao;
+import com.xiaoyou.dao.product.ProductCategoryDao;
+import com.xiaoyou.dao.product.ProductDao;
+import com.xiaoyou.dao.requirement.RequirementCategoryDao;
+import com.xiaoyou.dao.requirement.RequirementDao;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

@@ -3,8 +3,8 @@ package com.xiaoyou.test;
 import com.google.gson.GsonBuilder;
 import com.xiaoyou.domain.user.EngineerDomain;
 import com.xiaoyou.domain.user.UserDomain;
-import com.xiaoyou.jdbc.dao.dao.user.EngineerDao;
-import com.xiaoyou.jdbc.dao.dao.user.UserDao;
+import com.xiaoyou.dao.user.EngineerDao;
+import com.xiaoyou.dao.user.UserDao;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

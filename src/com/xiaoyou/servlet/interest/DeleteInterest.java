@@ -1,6 +1,6 @@
 package com.xiaoyou.servlet.interest;
 
-import com.xiaoyou.jdbc.dao.dao.interest.InterestDao;
+import com.xiaoyou.dao.interest.InterestDao;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
