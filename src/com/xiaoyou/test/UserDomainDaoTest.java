@@ -99,5 +99,10 @@ public class UserDomainDaoTest {
         out("{\"list\":" +new GsonBuilder().setPrettyPrinting().create().toJson(new UserDao().userCollectionShow("111"))+ "}");
 
     }
+    @Test
+    public void getSkill(){
+        out("{\"list\":"+new GsonBuilder().setPrettyPrinting().create().toJson(new EngineerDao().getSkillList())+"}");
+
+    }
 
 }
