@@ -13,8 +13,8 @@ public class EngineerDao implements IEngineer {
     @Override
     public int engineerRequest(EngineerDomain engineer_domain) {
         try {
-            String insertSQL = "INSERT INTO engineer(user_name,skill_id,certificate) values(?,?,?)";
-            JDBCUtil.queryRunner().update(insertSQL, engineer_domain.getUser_name(), engineer_domain.getskill_id(),engineer_domain.getCertificate());
+            String insertSQL = "INSERT INTO engineer(user_name,skill_name,certificate) values(?,?,?)";
+            JDBCUtil.queryRunner().update(insertSQL, engineer_domain.getUser_name(), engineer_domain.getskill_name(),engineer_domain.getCertificate());
             return 0;
         } catch (SQLException e) {
             e.printStackTrace();

@@ -65,7 +65,7 @@ public class RequirementDao implements IRequirement {
     @Override
     public List<RequirementDomain> requirementSelectAll() {
         try {
-            String selectAllSQL = "select * from requirement_release limit 50";
+            String selectAllSQL = "select * from requirement_release order by requirement_release_id desc limit 50";
             return JDBCUtil.queryRunner().query(selectAllSQL, new BeanListHandler<RequirementDomain>(RequirementDomain.class));
         } catch (SQLException e) {
             e.printStackTrace();

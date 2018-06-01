@@ -17,8 +17,8 @@ public class EngineerRequest extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         request.setCharacterEncoding("UTF-8");
         PrintWriter out = response.getWriter();
-        EngineerDomain engineer_domain = new EngineerDomain(request.getParameter("user_name"),Integer.parseInt(request.getParameter(
-                "skill_id")) , request.getParameter("certified_image"));
+        EngineerDomain engineer_domain = new EngineerDomain(request.getParameter("user_name"),request.getParameter(
+                "skill_name") , request.getParameter("certified_image"));
         int i = new EngineerDao().engineerRequest(engineer_domain);
         if (i == 0) {
             out.write("{\"certified\":0,\"message\":\"提交信息成功\"}");

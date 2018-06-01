@@ -62,7 +62,7 @@ public class ProductDao implements IProduct {
     @Override
     public List<ProductDomain> productSelectAll() {
         try {
-            String selectAllSQL = "select * from product_release limit 50";
+            String selectAllSQL = "select * from product_release order by product_release_id desc limit 50";
             return JDBCUtil.queryRunner().query(selectAllSQL, new BeanListHandler<ProductDomain>(ProductDomain.class));
         } catch (SQLException e) {
             e.printStackTrace();

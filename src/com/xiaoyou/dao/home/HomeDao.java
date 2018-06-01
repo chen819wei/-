@@ -12,7 +12,7 @@ public class HomeDao implements IHome {
     @Override
     public List<HomePagePicture> homePagePicture() {
         try {
-            String selectAllSQL = "select * from home_page_picture";
+            String selectAllSQL = "select * from home_page_picture order by id desc limit 5";
             return JDBCUtil.queryRunner().query(selectAllSQL, new BeanListHandler<HomePagePicture>(HomePagePicture.class));
         } catch (SQLException e) {
             e.printStackTrace();
