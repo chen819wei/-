@@ -1,22 +1,22 @@
 package com.xiaoyou.domain.home;
 
-public class HomePagePicture {
+public class HomePagePictureDomain {
     private int id;
     private String picture_name;
     private String picture_address;
 
-    public HomePagePicture(int id, String picture_name, String picture_address) {
+    public HomePagePictureDomain(int id, String picture_name, String picture_address) {
         this.id = id;
         this.picture_name = picture_name;
         this.picture_address = picture_address;
     }
 
-    public HomePagePicture() {
+    public HomePagePictureDomain() {
     }
 
     @Override
     public String toString() {
-        return "HomePagePicture{" +
+        return "HomePagePictureDomain{" +
                 "id=" + id +
                 ", picture_name='" + picture_name + '\'' +
                 ", picture_address='" + picture_address + '\'' +
